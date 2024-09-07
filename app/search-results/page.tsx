@@ -1,50 +1,35 @@
 "use client";
 
+import FlightData from "@/components/flight-data";
 import { Button } from "@/components/ui/button";
+import { getSearchResults } from "@/lib/fetchResults";
+import { useFlightSearchStore } from "@/lib/flight-search-store";
+import { SearchQuery } from "@/lib/types";
 import { ArrowDownIcon } from "lucide-react";
-import Link from "next/link";
 import { Suspense } from "react";
-import { useSearchParams } from "next/navigation";
-
-async function getSearchResults(searchParams: URLSearchParams) {
-  const URL = process.env.SERP_API;
-  // Here you would normally fetch from your API
-  const res = await fetch(`${URL}${searchParams.toString()}`);
-  if (!res.ok) {
-    throw new Error("Failed to fetch data");
-  }
-  return res.json();
-}
 
 export default function SearchResults() {
-  const searchParams = useSearchParams();
+  const {
+    departureDate,
+    returnDate,
+    passengers,
+    departAirport,
+    arrivalAirport,
+  } = useFlightSearchStore();
+
+  const searchParams: SearchQuery = {
+    outbound_date: departureDate,
+    return_date: returnDate,
+    adults: passengers,
+    departure_id: departAirport,
+    arrival_id: arrivalAirport,
+    currency: "USD",
+  };
+
   const results = getSearchResults(searchParams);
 
-  console.log(searchParams);
-
-  const flights = [
-    {
-      date: "8/16",
-      time: "8:00am - 12:01pm",
-      stops: "NONSTOP",
-      duration: "6hr 1m",
-      price: 123,
-    },
-    {
-      date: "8/16",
-      time: "9:00am - 3:01pm",
-      stops: "1 STOP (DFW)",
-      duration: "6hr 1m",
-      price: 124,
-    },
-    {
-      date: "8/16",
-      time: "10:00am - 4:01pm",
-      stops: "NONSTOP",
-      duration: "6hr 1m",
-      price: 125,
-    },
-  ];
+  // Wait for the promises to resolve
+  const flights = Promise.all([results]);
 
   return (
     <div className='min-h-screen bg-gray-100'>
@@ -82,44 +67,28 @@ export default function SearchResults() {
         <h2 className='text-xl mb-6'>Palm Springs (PSP) to New York (JFK)</h2>
 
         <Suspense fallback={<div>Loading...</div>}>
-          <div>{results}</div>
+          <div className='bg-white rounded-lg shadow overflow-hidden'>
+            <table className='w-full'>
+              <thead>
+                <tr className='bg-gray-100'>
+                  <th className='px-4 py-2 text-left'>
+                    DEPART AND ARRIVAL TIME <ArrowDownIcon className='inline' />
+                  </th>
+                  <th className='px-4 py-2 text-left'>
+                    NUMBER OF STOPS <ArrowDownIcon className='inline' />
+                  </th>
+                  <th className='px-4 py-2 text-left'>
+                    DURATION <ArrowDownIcon className='inline' />
+                  </th>
+                  <th className='px-4 py-2 text-left'>
+                    PRICE <ArrowDownIcon className='inline' />
+                  </th>
+                </tr>
+              </thead>
+              <FlightData data={flights} />
+            </table>
+          </div>
         </Suspense>
-
-        <div className='bg-white rounded-lg shadow overflow-hidden'>
-          <table className='w-full'>
-            <thead>
-              <tr className='bg-gray-100'>
-                <th className='px-4 py-2 text-left'>
-                  DEPART AND ARRIVAL TIME <ArrowDownIcon className='inline' />
-                </th>
-                <th className='px-4 py-2 text-left'>
-                  NUMBER OF STOPS <ArrowDownIcon className='inline' />
-                </th>
-                <th className='px-4 py-2 text-left'>
-                  DURATION <ArrowDownIcon className='inline' />
-                </th>
-                <th className='px-4 py-2 text-left'>
-                  PRICE <ArrowDownIcon className='inline' />
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              {flights.map((flight, index) => (
-                <Link key={index} href='fare-confirmation'>
-                  <tr key={index} className='border-t'>
-                    <td className='px-4 py-4'>
-                      <div className='font-semibold'>{flight.date}</div>
-                      <div>{flight.time}</div>
-                    </td>
-                    <td className='px-4 py-4'>{flight.stops}</td>
-                    <td className='px-4 py-4'>{flight.duration}</td>
-                    <td className='px-4 py-4'>${flight.price}</td>
-                  </tr>
-                </Link>
-              ))}
-            </tbody>
-          </table>
-        </div>
       </main>
     </div>
   );

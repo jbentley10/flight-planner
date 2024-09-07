@@ -4,7 +4,7 @@ interface FlightSearchState {
   departAirport: string;
   arrivalAirport: string;
   departureDate: string;
-  returnDate?: string;
+  returnDate: string;
   passengers: number;
   setDepartAirport: (airport: string) => void;
   setArrivalAirport: (airport: string) => void;

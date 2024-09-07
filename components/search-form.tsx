@@ -13,7 +13,7 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Input } from "@/components/ui/input";
 import Link from "next/link";
 
-import React, { useEffect } from "react";
+import React from "react";
 import { Button } from "./ui/button";
 import { Airport } from "@/lib/types";
 import { useFlightSearchStore } from "@/lib/flight-search-store";
@@ -27,19 +27,9 @@ function SearchForm(props: { airports: Airport[] }) {
     setReturnDate,
     passengers,
     setPassengers,
-    departAirport,
     setDepartAirport,
-    arrivalAirport,
     setArrivalAirport,
   } = useFlightSearchStore();
-
-  useEffect(() => {
-    console.log(passengers);
-    console.log(departureDate);
-    console.log(returnDate);
-    console.log(departAirport);
-    console.log(arrivalAirport);
-  }, [departureDate, returnDate, passengers, departAirport, arrivalAirport]);
 
   return (
     <div>
