@@ -1,18 +1,23 @@
-"use client";
-
+// app/page.tsx
+import React from "react";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
+import { AirportCombobox } from "@/components/airport-combobox";
 import { Label } from "@/components/ui/label";
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import {
+  SelectItem,
   Select,
   SelectContent,
-  SelectItem,
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
+import { Input } from "@/components/ui/input";
 import Link from "next/link";
-export default function Home() {
+import { fetchAirports } from "@/lib/supabase/supabaseData";
+
+export default async function Home() {
+  const airports = await fetchAirports();
+
   return (
     <div className='min-h-screen bg-gray-100'>
       <header className='bg-white shadow'>
@@ -57,32 +62,19 @@ export default function Home() {
                 <div className='grid grid-cols-2 gap-4 mb-4'>
                   <div>
                     <Label htmlFor='depart'>DEPART</Label>
-                    <Select>
-                      <SelectTrigger>
-                        <SelectValue placeholder='PSP (Palm S...' />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value='psp'>PSP (Palm Springs)</SelectItem>
-                        {/* Add more options as needed */}
-                      </SelectContent>
-                    </Select>
+                    <br />
+                    {airports && <AirportCombobox airports={airports} />}
                   </div>
                   <div>
                     <Label htmlFor='arrive'>ARRIVE</Label>
-                    <Select>
-                      <SelectTrigger>
-                        <SelectValue placeholder='Select a dest...' />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value='lax'>LAX (Los Angeles)</SelectItem>
-                        {/* Add more options as needed */}
-                      </SelectContent>
-                    </Select>
+                    <br />
+                    {airports && <AirportCombobox airports={airports} />}
                   </div>
                 </div>
                 <div className='grid grid-cols-2 gap-4 mb-4'>
                   <div>
                     <Label htmlFor='departDate'>DEPARTURE DATE</Label>
+                    <br />
                     <Input
                       type='date'
                       id='departDate'
