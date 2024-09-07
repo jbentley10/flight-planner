@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDownIcon } from "lucide-react";
+import Link from "next/link";
 
 export default function SearchResults() {
   const flights = [
@@ -80,15 +81,17 @@ export default function SearchResults() {
             </thead>
             <tbody>
               {flights.map((flight, index) => (
-                <tr key={index} className='border-t'>
-                  <td className='px-4 py-4'>
-                    <div className='font-semibold'>{flight.date}</div>
-                    <div>{flight.time}</div>
-                  </td>
-                  <td className='px-4 py-4'>{flight.stops}</td>
-                  <td className='px-4 py-4'>{flight.duration}</td>
-                  <td className='px-4 py-4'>${flight.price}</td>
-                </tr>
+                <Link key={index} href='fare-confirmation'>
+                  <tr key={index} className='border-t'>
+                    <td className='px-4 py-4'>
+                      <div className='font-semibold'>{flight.date}</div>
+                      <div>{flight.time}</div>
+                    </td>
+                    <td className='px-4 py-4'>{flight.stops}</td>
+                    <td className='px-4 py-4'>{flight.duration}</td>
+                    <td className='px-4 py-4'>${flight.price}</td>
+                  </tr>
+                </Link>
               ))}
             </tbody>
           </table>

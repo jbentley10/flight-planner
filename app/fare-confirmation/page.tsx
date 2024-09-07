@@ -5,6 +5,7 @@ import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Checkbox } from "@/components/ui/checkbox";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { CheckIcon } from "lucide-react";
+import Link from "next/link";
 
 export default function FareConfirmationDeparture() {
   const fareOptions = [
@@ -112,7 +113,9 @@ export default function FareConfirmationDeparture() {
                 ))}
               </CardContent>
               <CardFooter>
-                <Button className='w-full'>SELECT FOR ${option.price}</Button>
+                <Link href='booking-summary'>
+                  <Button className='w-full'>SELECT FOR ${option.price}</Button>
+                </Link>
               </CardFooter>
             </Card>
           ))}
