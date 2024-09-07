@@ -64,6 +64,6 @@ export interface FlightResults {
     adults: number;
     currency: string;
   };
-  best_flights: FlightResult[];
-  other_flights: FlightResult[];
+  best_flights?: FlightResult[];
+  other_flights?: FlightResult[];
 }

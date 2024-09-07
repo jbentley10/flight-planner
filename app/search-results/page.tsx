@@ -1,11 +1,9 @@
 "use client";
 
-import FlightData from "@/components/flight-data";
+import FlightResultsTable from "@/components/flight-results-table";
 import { Button } from "@/components/ui/button";
-import { getSearchResults } from "@/lib/fetchResults";
 import { useFlightSearchStore } from "@/lib/flight-search-store";
 import { SearchQuery } from "@/lib/types";
-import { ArrowDownIcon } from "lucide-react";
 import { Suspense } from "react";
 
 export default function SearchResults() {
@@ -25,11 +23,6 @@ export default function SearchResults() {
     arrival_id: arrivalAirport,
     currency: "USD",
   };
-
-  const results = getSearchResults(searchParams);
-
-  // Wait for the promises to resolve
-  const flights = Promise.all([results]);
 
   return (
     <div className='min-h-screen bg-gray-100'>
@@ -67,27 +60,7 @@ export default function SearchResults() {
         <h2 className='text-xl mb-6'>Palm Springs (PSP) to New York (JFK)</h2>
 
         <Suspense fallback={<div>Loading...</div>}>
-          <div className='bg-white rounded-lg shadow overflow-hidden'>
-            <table className='w-full'>
-              <thead>
-                <tr className='bg-gray-100'>
-                  <th className='px-4 py-2 text-left'>
-                    DEPART AND ARRIVAL TIME <ArrowDownIcon className='inline' />
-                  </th>
-                  <th className='px-4 py-2 text-left'>
-                    NUMBER OF STOPS <ArrowDownIcon className='inline' />
-                  </th>
-                  <th className='px-4 py-2 text-left'>
-                    DURATION <ArrowDownIcon className='inline' />
-                  </th>
-                  <th className='px-4 py-2 text-left'>
-                    PRICE <ArrowDownIcon className='inline' />
-                  </th>
-                </tr>
-              </thead>
-              <FlightData data={flights} />
-            </table>
-          </div>
+          <FlightResultsTable params={searchParams} />
         </Suspense>
       </main>
     </div>
