@@ -1,3 +1,4 @@
+import { Airport } from "../types";
 import { createClient } from "./server";
 
 export async function fetchAirports() {
@@ -6,8 +7,11 @@ export async function fetchAirports() {
     .from("airports")
     .select(`code, city, state, country`);
 
-  console.log(data);
-  console.log(error);
+  if (error) {
+    return error;
+  }
 
-  return data;
+  const airports: Airport[] = data;
+
+  return airports;
 }

@@ -19,7 +19,10 @@ import {
 } from "@/components/ui/command";
 import { Airport } from "@/lib/types";
 
-export function AirportCombobox(props: { airports: Airport[] }) {
+export function AirportCombobox(props: {
+  handleChange: (value: string) => void;
+  airports: Airport[];
+}) {
   const { airports } = props;
   const [open, setOpen] = React.useState(false);
   const [value, setValue] = React.useState("");
@@ -39,8 +42,8 @@ export function AirportCombobox(props: { airports: Airport[] }) {
           className='w-[200px] justify-between'
         >
           {value
-            ? sortedAirports.find((airport) => airport.code === value)?.city ||
-              "Select airport..."
+            ? sortedAirports.find((airport) => airport.city === value)?.city ||
+              value
             : "Select airport..."}
           <ChevronsUpDown className='ml-2 h-4 w-4 shrink-0 opacity-50' />
         </Button>
@@ -58,6 +61,7 @@ export function AirportCombobox(props: { airports: Airport[] }) {
                   onSelect={(currentValue) => {
                     setValue(currentValue === value ? "" : currentValue);
                     setOpen(false);
+                    props.handleChange(currentValue);
                   }}
                 >
                   <Check

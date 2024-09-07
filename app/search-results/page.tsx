@@ -1,8 +1,27 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import { ArrowDownIcon } from "lucide-react";
 import Link from "next/link";
+import { Suspense } from "react";
+import { useSearchParams } from "next/navigation";
+
+async function getSearchResults(searchParams: URLSearchParams) {
+  const URL = process.env.SERP_API;
+  // Here you would normally fetch from your API
+  const res = await fetch(`${URL}${searchParams.toString()}`);
+  if (!res.ok) {
+    throw new Error("Failed to fetch data");
+  }
+  return res.json();
+}
 
 export default function SearchResults() {
+  const searchParams = useSearchParams();
+  const results = getSearchResults(searchParams);
+
+  console.log(searchParams);
+
   const flights = [
     {
       date: "8/16",
@@ -61,6 +80,11 @@ export default function SearchResults() {
         </div>
         <h1 className='text-3xl font-bold mb-4'>SELECT A DEPARTURE FLIGHT</h1>
         <h2 className='text-xl mb-6'>Palm Springs (PSP) to New York (JFK)</h2>
+
+        <Suspense fallback={<div>Loading...</div>}>
+          <div>{results}</div>
+        </Suspense>
+
         <div className='bg-white rounded-lg shadow overflow-hidden'>
           <table className='w-full'>
             <thead>
