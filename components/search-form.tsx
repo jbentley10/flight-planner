@@ -13,13 +13,18 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Input } from "@/components/ui/input";
 import Link from "next/link";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Button } from "./ui/button";
 import { Airport } from "@/lib/types";
 import { useFlightSearchStore } from "@/lib/flight-search-store";
+import { createClient, PostgrestSingleResponse } from "@supabase/supabase-js";
 
-function SearchForm(props: { airports: Airport[] }) {
-  const { airports } = props;
+const supabase_url = `${process.env.NEXT_PUBLIC_SUPABASE_URL}`;
+const supbase_key = `${process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY}`;
+
+const supabase = createClient(supabase_url, supbase_key);
+
+function SearchForm() {
   const {
     departureDate,
     setDepartureDate,
@@ -30,6 +35,33 @@ function SearchForm(props: { airports: Airport[] }) {
     setDepartAirport,
     setArrivalAirport,
   } = useFlightSearchStore();
+
+  const [airports, setAirports] = useState<Airport[]>([]);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    const fetchAirports = async () => {
+      const response: PostgrestSingleResponse<Airport[]> = await supabase
+        .from("airports")
+        .select(`code, city, state, country`);
+
+      if (response.error) {
+        console.error("Error fetching airports:", response.error.message);
+        setError(response.error.message);
+        return;
+      }
+
+      if (response.data) {
+        setAirports(response.data);
+      }
+    };
+
+    fetchAirports();
+  }, []);
+
+  if (error) {
+    return <div>Error: {error}</div>;
+  }
 
   return (
     <div>

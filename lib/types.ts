@@ -1,5 +1,6 @@
 // Define the TypeScript types for the GraphQL response
 export interface Airport {
+  id: number;
   code: string;
   city: string;
   state: string;

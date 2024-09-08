@@ -2,12 +2,9 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 
-import { fetchAirports } from "@/lib/supabase/supabaseData";
 import SearchForm from "@/components/search-form";
 
 export default async function Home() {
-  const airports = await fetchAirports();
-
   return (
     <div className='min-h-screen bg-gray-100'>
       <header className='bg-white shadow'>
@@ -30,7 +27,7 @@ export default async function Home() {
               TRAVEL HAPPY.
             </h1>
           </div>
-          {airports && <SearchForm airports={airports} />}
+          <SearchForm />
         </div>
       </main>
     </div>
