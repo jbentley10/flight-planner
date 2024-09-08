@@ -1,7 +1,9 @@
 "use client";
 
 import { useFlightSearchStore } from "@/lib/flight-search-store";
-import React, { createContext } from "react";
+import React from "react";
+
+import { QueryContext } from "@/lib/query-provider"
 
 function Layout({
   children,
