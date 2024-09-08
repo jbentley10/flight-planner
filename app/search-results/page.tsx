@@ -3,7 +3,7 @@
 import FlightResultsTable from "@/components/flight-results-table";
 import { Button } from "@/components/ui/button";
 import { useContext } from "react";
-import { QueryContext } from "./layout";
+import { QueryContext } from "@/lib/query-provider";
 
 export default function SearchResults() {
   const {
