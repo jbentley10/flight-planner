@@ -46,9 +46,7 @@ async function FlightResultsTable(props: {
     currency: props.currency,
   };
 
-if (searchParams.outbound_date !== "") {
   const results = await getSearchResults(searchParams);
-}
 
   function toHoursAndMinutes(totalMinutes: number) {
     const hours = Math.floor(totalMinutes / 60);
