@@ -29,14 +29,15 @@ export async function getSearchResults(
   return data;
 }
 
-async function FlightResultsTable(props: {
-  outboundDate: string;
-  returnDate: string;
-  adults: number;
-  departureID: string;
-  arrivalID: string;
-  currency: string;
-}) {
+async function FlightResultsTable({
+  outboundDate="2024-09-09",
+  returnDate="2024-09-19",
+  adults=1,
+  departureID="PSP",
+  arrivalID="JFK",
+  currency="USD"
+}): SearchQuery {
+
   const searchParams = {
     outbound_date: props.outboundDate,
     return_date: props.returnDate,
