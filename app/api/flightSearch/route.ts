@@ -14,26 +14,20 @@ export async function POST(req: NextRequest) {
   const currency = body.currency;
 
   try {
-    getJson(
-      {
-        api_key: apiKey,
-        engine: "google_flights",
-        hl: "en",
-        gl: "us",
-        departure_id: departure_id,
-        arrival_id: arrival_id,
-        outbound_date: outbound_date,
-        return_date: return_date,
-        currency: currency,
-        adults: adults,
-      },
-      (json) => {
-        return NextResponse.json(json);
-      }
-    );
+    const response = await getJson({
+      api_key: apiKey,
+      engine: "google_flights",
+      hl: "en",
+      gl: "us",
+      departure_id: departure_id,
+      arrival_id: arrival_id,
+      outbound_date: outbound_date,
+      return_date: return_date,
+      currency: currency,
+      adults: adults,
+    });
+    return NextResponse.json(response);
   } catch {
     return NextResponse.json({ error: "There was an error" });
   }
-
-  return NextResponse.json({ success: true, message: "Complete" });
 }

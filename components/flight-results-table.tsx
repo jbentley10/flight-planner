@@ -1,10 +1,12 @@
 import { ArrowDownIcon } from "lucide-react";
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { QueryContext } from "@/lib/query-provider";
 import FlightResultsSkeleton from "./flight-results-table-skeleton";
+import { Flight, FlightResult, FlightResults } from "@/lib/types";
+import getData from "@/lib/flightData";
 
 async function FlightResultsTable() {
-  // const [data, setData] = useState();
+  const [data, setData] = useState<FlightResults | null>(null);
   const [error, setError] = useState<Error | null>(null);
   const [loading, setLoading] = useState<boolean>(false);
   const {
@@ -16,61 +18,33 @@ async function FlightResultsTable() {
     currency,
   } = useContext(QueryContext);
 
-  // fetch method
-  const method = "POST";
+  useEffect(() => {
+    // fetch options
+    const options = {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify({
+        outbound_date: outbound_date,
+        return_date: return_date,
+        adults: adults,
+        departure_id: departure_id,
+        arrival_id: arrival_id,
+        currency: currency,
+      }),
+    };
+    getData(options);
+  }, [outbound_date, return_date, adults, departure_id, arrival_id, currency]);
 
-  // fetch options
-  const options = {
-    method: method,
-    headers: {
-      "content-type": "application/json",
-    },
-    body: JSON.stringify({
-      outbound_date: outbound_date,
-      return_date: return_date,
-      adults: adults,
-      departure_id: departure_id,
-      arrival_id: arrival_id,
-      currency: currency,
-    }),
-  };
-
-  // Fetch URL
-  const url = "/api/flightSearch";
-
-  try {
-    ``; // Execute the fetch API
-    const res = await fetch(url, options);
-
-    // Check if the response is OK (status code 200-299)
-    if (!res.ok) {
-      throw new Error(`HTTP error! Status: ${res.status}`);
-    }
-
-    // Check if the response has content
-    if (res.headers.get("content-length") === "0") {
-      throw new Error("No content returned from the server.");
-    }
-    ``;
-
-    // Get data back from the backend
-    const final = await res.json();
-    console.log("Final data: ", final);
-    setLoading(false);
-  } catch (error) {
-    console.error("Error fetching flight data:", error);
-    setError(error instanceof Error ? error : new Error(String(error))); // Assuming you have a setError function to handle errors
-    setLoading(false);
+  function toHoursAndMinutes(totalMinutes: number) {
+    const hours = Math.floor(totalMinutes / 60);
+    const minutes = totalMinutes % 60;
+    return `${hours} hr ${minutes} minutes`;
   }
 
-  // function toHoursAndMinutes(totalMinutes: number) {
-  //   const hours = Math.floor(totalMinutes / 60);
-  //   const minutes = totalMinutes % 60;
-  //   return `${hours} hr ${minutes} minutes`;
-  // }
-
-  //const bestFlights = data?.best_flights;
-  //const otherFlights = data?.other_flights;
+  const bestFlights = data?.best_flights;
+  const otherFlights = data?.other_flights;
 
   return (
     <>
@@ -97,7 +71,7 @@ async function FlightResultsTable() {
           <tbody>
             {error && <div>An error occurred</div>}
             {loading && <FlightResultsSkeleton />}
-            {/* {data &&
+            {data &&
               bestFlights?.map((flight: FlightResult, index: number) => (
                 <>
                   <tr key={index} className='border-t'>
@@ -119,8 +93,8 @@ async function FlightResultsTable() {
                     <td className='px-4 py-4'>${flight.price}</td>
                   </tr>
                 </>
-              ))} */}
-            {/* {data &&
+              ))}
+            {data &&
               otherFlights?.map((flight: FlightResult, index: number) => (
                 <>
                   <tr key={index} className='border-t'>
@@ -142,7 +116,7 @@ async function FlightResultsTable() {
                     <td className='px-4 py-4'>${flight.price}</td>
                   </tr>
                 </>
-              ))} */}
+              ))}
           </tbody>
         </table>
       </div>
