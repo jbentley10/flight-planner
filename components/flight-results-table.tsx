@@ -36,7 +36,7 @@ async function FlightResultsTable({
   departureID="PSP",
   arrivalID="JFK",
   currency="USD"
-}): SearchQuery {
+}) {
 
   const searchParams = {
     outbound_date:outboundDate,
