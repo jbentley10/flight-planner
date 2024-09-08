@@ -2,17 +2,14 @@ import { Flight, FlightResult, FlightResults, SearchQuery } from "@/lib/types";
 import { ArrowDownIcon } from "lucide-react";
 import React from "react";
 
-export async function getSearchResults(
-  searchParams: SearchQuery
-): Promise<FlightResults> {
-  const {
-    departure_id,
-    arrival_id,
-    adults,
-    outbound_date,
-    return_date,
-    currency,
-  } = searchParams;
+export async function getSearchResults({
+  outboundDate="2024-09-09",
+  returnDate="2024-09-19",
+  adults=1,
+  departureID="PSP",
+  arrivalID="JFK",
+  currency="USD"
+}): Promise<FlightResults> {
 
 console.log("departure ID");
 console.log(departure_id);
@@ -41,16 +38,14 @@ async function FlightResultsTable({
   currency="USD"
 }) {
 
-  const searchParams = {
+  const results = await getSearchResults({
     outbound_date:outboundDate,
     return_date: returnDate,
     adults: adults,
     departure_id: departureID,
     arrival_id: arrivalID,
     currency: currency,
-  };
-
-  const results = await getSearchResults(searchParams);
+  });
 
   function toHoursAndMinutes(totalMinutes: number) {
     const hours = Math.floor(totalMinutes / 60);
