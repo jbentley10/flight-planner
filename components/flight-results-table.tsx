@@ -1,65 +1,81 @@
-import { Flight, FlightResult, FlightResults, SearchQuery } from "@/lib/types";
 import { ArrowDownIcon } from "lucide-react";
-import React from "react";
+import React, { useContext, useState } from "react";
+import { QueryContext } from "@/lib/query-provider";
+import FlightResultsSkeleton from "./flight-results-table-skeleton";
 
-export async function getSearchResults({
-  outboundDate="2024-09-09",
-  returnDate="2024-09-19",
-  adults=1,
-  departureID="PSP",
-  arrivalID="JFK",
-  currency="USD"
-}): Promise<FlightResults> {
+async function FlightResultsTable() {
+  // const [data, setData] = useState();
+  const [error, setError] = useState<Error | null>(null);
+  const [loading, setLoading] = useState<boolean>(false);
+  const {
+    outbound_date,
+    return_date,
+    adults,
+    departure_id,
+    arrival_id,
+    currency,
+  } = useContext(QueryContext);
 
-console.log("departure ID");
-console.log(departure_id);
+  // fetch method
+  const method = "POST";
 
-  const res = await fetch(
-    `/api/flightSearch?departure_id=${departure_id}&arrival_id=${arrival_id}&adults=${adults}&outbound_date=${outbound_date}&return_date=${return_date}&currency=${currency}`,
-    {
-      method: "GET",
+  // fetch options
+  const options = {
+    method: method,
+    headers: {
+      "content-type": "application/json",
+    },
+    body: JSON.stringify({
+      outbound_date: outbound_date,
+      return_date: return_date,
+      adults: adults,
+      departure_id: departure_id,
+      arrival_id: arrival_id,
+      currency: currency,
+    }),
+  };
+
+  // Fetch URL
+  const url = "/api/flightSearch";
+
+  try {
+    ``; // Execute the fetch API
+    const res = await fetch(url, options);
+
+    // Check if the response is OK (status code 200-299)
+    if (!res.ok) {
+      throw new Error(`HTTP error! Status: ${res.status}`);
     }
-  );
-  if (!res.ok) {
-    throw new Error("Failed to fetch data");
+
+    // Check if the response has content
+    if (res.headers.get("content-length") === "0") {
+      throw new Error("No content returned from the server.");
+    }
+    ``;
+
+    // Get data back from the backend
+    const final = await res.json();
+    console.log("Final data: ", final);
+    setLoading(false);
+  } catch (error) {
+    console.error("Error fetching flight data:", error);
+    setError(error instanceof Error ? error : new Error(String(error))); // Assuming you have a setError function to handle errors
+    setLoading(false);
   }
 
-  const data = res.json();
+  // function toHoursAndMinutes(totalMinutes: number) {
+  //   const hours = Math.floor(totalMinutes / 60);
+  //   const minutes = totalMinutes % 60;
+  //   return `${hours} hr ${minutes} minutes`;
+  // }
 
-  return data;
-}
-
-async function FlightResultsTable({
-  outboundDate="2024-09-09",
-  returnDate="2024-09-19",
-  adults=1,
-  departureID="PSP",
-  arrivalID="JFK",
-  currency="USD"
-}) {
-
-  const results = await getSearchResults({
-    outbound_date:outboundDate,
-    return_date: returnDate,
-    adults: adults,
-    departure_id: departureID,
-    arrival_id: arrivalID,
-    currency: currency,
-  });
-
-  function toHoursAndMinutes(totalMinutes: number) {
-    const hours = Math.floor(totalMinutes / 60);
-    const minutes = totalMinutes % 60;
-    return `${hours} hr ${minutes} minutes`;
-  }
-
-  const bestFlights = results?.best_flights;
-  const otherFlights = results?.other_flights;
+  //const bestFlights = data?.best_flights;
+  //const otherFlights = data?.other_flights;
 
   return (
     <>
       <h1 className='text-3xl font-bold mb-4'>SELECT A DEPARTURE FLIGHT</h1>
-      <h2 className='text-xl mb-6'>{`${departureID} to ${arrivalID}`}</h2>
+      <h2 className='text-xl mb-6'>{`${departure_id} to ${arrival_id}`}</h2>
       <div className='bg-white rounded-lg shadow overflow-hidden'>
         <table className='w-full'>
           <thead>
@@ -79,50 +95,54 @@ async function FlightResultsTable({
             </tr>
           </thead>
           <tbody>
-            {bestFlights?.map((flight: FlightResult, index: number) => (
-              <>
-                <tr key={index} className='border-t'>
-                  <td className='px-4 py-4'>
-                    {flight.layovers.length > 0 ? (
-                      flight.flights.map((flight: Flight, index: number) => (
-                        <div key={index} className='font-semibold'>
-                          {flight.departure_airport.time}
-                        </div>
-                      ))
-                    ) : (
-                      <div />
-                    )}
-                  </td>
-                  <td className='px-4 py-4'>{flight.layovers.length}</td>
-                  <td className='px-4 py-4'>
-                    {toHoursAndMinutes(flight.flights[0].duration)}
-                  </td>
-                  <td className='px-4 py-4'>${flight.price}</td>
-                </tr>
-              </>
-            ))}
-            {otherFlights?.map((flight: FlightResult, index: number) => (
-              <>
-                <tr key={index} className='border-t'>
-                  <td className='px-4 py-4'>
-                    {flight.layovers.length > 0 ? (
-                      flight.flights.map((flight: Flight, index: number) => (
-                        <div key={index} className='font-semibold'>
-                          {flight.departure_airport.time}
-                        </div>
-                      ))
-                    ) : (
-                      <div />
-                    )}
-                  </td>
-                  <td className='px-4 py-4'>{flight.layovers.length}</td>
-                  <td className='px-4 py-4'>
-                    {toHoursAndMinutes(flight.flights[0].duration)}
-                  </td>
-                  <td className='px-4 py-4'>${flight.price}</td>
-                </tr>
-              </>
-            ))}
+            {error && <div>An error occurred</div>}
+            {loading && <FlightResultsSkeleton />}
+            {/* {data &&
+              bestFlights?.map((flight: FlightResult, index: number) => (
+                <>
+                  <tr key={index} className='border-t'>
+                    <td className='px-4 py-4'>
+                      {flight.layovers.length > 0 ? (
+                        flight.flights.map((flight: Flight, index: number) => (
+                          <div key={index} className='font-semibold'>
+                            {flight.departure_airport.time}
+                          </div>
+                        ))
+                      ) : (
+                        <div />
+                      )}
+                    </td>
+                    <td className='px-4 py-4'>{flight.layovers.length}</td>
+                    <td className='px-4 py-4'>
+                      {toHoursAndMinutes(flight.flights[0].duration)}
+                    </td>
+                    <td className='px-4 py-4'>${flight.price}</td>
+                  </tr>
+                </>
+              ))} */}
+            {/* {data &&
+              otherFlights?.map((flight: FlightResult, index: number) => (
+                <>
+                  <tr key={index} className='border-t'>
+                    <td className='px-4 py-4'>
+                      {flight.layovers.length > 0 ? (
+                        flight.flights.map((flight: Flight, index: number) => (
+                          <div key={index} className='font-semibold'>
+                            {flight.departure_airport.time}
+                          </div>
+                        ))
+                      ) : (
+                        <div />
+                      )}
+                    </td>
+                    <td className='px-4 py-4'>{flight.layovers.length}</td>
+                    <td className='px-4 py-4'>
+                      {toHoursAndMinutes(flight.flights[0].duration)}
+                    </td>
+                    <td className='px-4 py-4'>${flight.price}</td>
+                  </tr>
+                </>
+              ))} */}
           </tbody>
         </table>
       </div>

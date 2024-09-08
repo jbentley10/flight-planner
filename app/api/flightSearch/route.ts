@@ -1,36 +1,39 @@
 import { NextRequest, NextResponse } from "next/server";
+import { getJson } from "serpapi";
 
-export const dynamic = "force-dynamic"; // This opts out of static generation
+export async function POST(req: NextRequest) {
+  const apiKey = process.env.NEXT_PUBLIC_SERP_API_KEY;
 
-export async function GET(request: NextRequest) {
-  const searchParams = request.nextUrl.searchParams;
-  const departure_id = searchParams.get("departure_id") || "";
-  const arrival_id = searchParams.get("arrival_id") || "";
-  const adults = searchParams.get("adults") || "1";
-  const outbound_date = searchParams.get("outbound_date") || "";
-  const return_date = searchParams.get("return_date") || "";
+  const body = await req.json();
 
-  // Validate parameters
-  if (!departure_id || !arrival_id || !outbound_date) {
-    return NextResponse.json(
-      { error: "Missing required parameters" },
-      { status: 400 }
-    );
-  }
-
-  const apiKey = process.env.SERP_API_KEY;
-  const url = `https://serpapi.com/search?engine=google_flights&api_key=${apiKey}&departure_id=${departure_id}&arrival_id=${arrival_id}&adults=${adults}&outbound_date=${outbound_date}&return_date=${return_date}&currency=USD`;
+  const outbound_date = body.outbound_date;
+  const return_date = body.return_date;
+  const adults = body.adults;
+  const departure_id = body.departure_id;
+  const arrival_id = body.arrival_id;
+  const currency = body.currency;
 
   try {
-    const response = await fetch(url);
-    const data = await response.json();
-
-    return NextResponse.json(data);
-  } catch (error) {
-    console.error("Error fetching flight data:", error);
-    return NextResponse.json(
-      { error: "Error fetching flight data" },
-      { status: 500 }
+    getJson(
+      {
+        api_key: apiKey,
+        engine: "google_flights",
+        hl: "en",
+        gl: "us",
+        departure_id: departure_id,
+        arrival_id: arrival_id,
+        outbound_date: outbound_date,
+        return_date: return_date,
+        currency: currency,
+        adults: adults,
+      },
+      (json) => {
+        return NextResponse.json(json);
+      }
     );
+  } catch {
+    return NextResponse.json({ error: "There was an error" });
   }
+
+  return NextResponse.json({ success: true, message: "Complete" });
 }

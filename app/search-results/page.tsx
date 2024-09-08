@@ -2,19 +2,8 @@
 
 import FlightResultsTable from "@/components/flight-results-table";
 import { Button } from "@/components/ui/button";
-import { useContext } from "react";
-import { QueryContext } from "@/lib/query-provider";
 
 export default function SearchResults() {
-  const {
-    outbound_date,
-    return_date,
-    adults,
-    departure_id,
-    arrival_id,
-    currency,
-  } = useContext(QueryContext);
-
   return (
     <div className='min-h-screen bg-gray-100'>
       <header className='bg-white shadow'>
@@ -48,14 +37,7 @@ export default function SearchResults() {
           </div>
         </div>
 
-        <FlightResultsTable
-          outboundDate={outbound_date}
-          returnDate={return_date}
-          adults={adults}
-          departureID={departure_id}
-          arrivalID={arrival_id}
-          currency={currency}
-        />
+        <FlightResultsTable />
       </main>
     </div>
   );
