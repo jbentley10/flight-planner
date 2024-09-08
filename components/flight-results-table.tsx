@@ -45,7 +45,10 @@ async function FlightResultsTable(props: {
     arrival_id: props.arrivalID,
     currency: props.currency,
   };
+
+if (searchParams.departure_id) {
   const results = await getSearchResults(searchParams);
+}
 
   function toHoursAndMinutes(totalMinutes: number) {
     const hours = Math.floor(totalMinutes / 60);
@@ -53,8 +56,8 @@ async function FlightResultsTable(props: {
     return `${hours} hr ${minutes} minutes`;
   }
 
-  const bestFlights = results.best_flights;
-  const otherFlights = results.other_flights;
+  const bestFlights = results?.best_flights;
+  const otherFlights = results?.other_flights;
 
   return (
     <>
