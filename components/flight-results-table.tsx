@@ -46,7 +46,7 @@ async function FlightResultsTable(props: {
     currency: props.currency,
   };
 
-if (searchParams.departure_id != "") {
+if (searchParams.outbound_date !== "") {
   const results = await getSearchResults(searchParams);
 }
 
