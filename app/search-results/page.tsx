@@ -3,7 +3,6 @@
 import FlightResultsTable from "@/components/flight-results-table";
 import FlightResultsSkeleton from "@/components/flight-results-table-skeleton";
 import { Button } from "@/components/ui/button";
-import { Skeleton } from "@/components/ui/skeleton";
 import { useFlightSearchStore } from "@/lib/flight-search-store";
 import { SearchQuery } from "@/lib/types";
 import { Suspense } from "react";
