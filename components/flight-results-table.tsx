@@ -61,7 +61,7 @@ async function FlightResultsTable({
   return (
     <>
       <h1 className='text-3xl font-bold mb-4'>SELECT A DEPARTURE FLIGHT</h1>
-      <h2 className='text-xl mb-6'>{`${props.departureID} to ${props.arrivalID}`}</h2>
+      <h2 className='text-xl mb-6'>{`${departureID} to ${arrivalID}`}</h2>
       <div className='bg-white rounded-lg shadow overflow-hidden'>
         <table className='w-full'>
           <thead>
