@@ -15,7 +15,7 @@ export async function getSearchResults(
   } = searchParams;
 
   const res = await fetch(
-    `http://localhost:3000/api/flightSearch?&departure_id=${departure_id}&arrival_id=${arrival_id}&adults=${adults}&outbound_date=${outbound_date}&return_date=${return_date}&currency=${currency}`,
+    `/api/flightSearch?departure_id=${departure_id}&arrival_id=${arrival_id}&adults=${adults}&outbound_date=${outbound_date}&return_date=${return_date}&currency=${currency}`,
     {
       method: "GET",
     }
@@ -29,25 +29,23 @@ export async function getSearchResults(
   return data;
 }
 
-async function FlightResultsTable(props: { params: SearchQuery }) {
-  const results = await getSearchResults(props.params);
-  console.log(results);
-
-  const flights: FlightResult[] = [];
-
-  if (results.best_flights) {
-    // For each flight in the best flights array, add it to to our flight list.
-    for (let i = 0; i < results.best_flights.length; i++) {
-      flights.push(results.best_flights[i]);
-    }
-  }
-
-  if (results.other_flights) {
-    // For each flight in the best flights array, add it to to our flight list.
-    for (let i = 0; i < results.other_flights.length; i++) {
-      flights.push(results.other_flights[i]);
-    }
-  }
+async function FlightResultsTable(props: {
+  outboundDate: string;
+  returnDate: string;
+  adults: number;
+  departureID: string;
+  arrivalID: string;
+  currency: string;
+}) {
+  const searchParams = {
+    outbound_date: props.outboundDate,
+    return_date: props.returnDate,
+    adults: props.adults,
+    departure_id: props.departureID,
+    arrival_id: props.arrivalID,
+    currency: props.currency,
+  };
+  const results = await getSearchResults(searchParams);
 
   function toHoursAndMinutes(totalMinutes: number) {
     const hours = Math.floor(totalMinutes / 60);
@@ -55,12 +53,13 @@ async function FlightResultsTable(props: { params: SearchQuery }) {
     return `${hours} hr ${minutes} minutes`;
   }
 
+  const bestFlights = results.best_flights;
+  const otherFlights = results.other_flights;
+
   return (
     <>
       <h1 className='text-3xl font-bold mb-4'>SELECT A DEPARTURE FLIGHT</h1>
-      <h2 className='text-xl mb-6'>
-        {`${props.params.departure_id} to ${props.params.arrival_id}`}
-      </h2>
+      <h2 className='text-xl mb-6'>{`${props.departureID} to ${props.arrivalID}`}</h2>
       <div className='bg-white rounded-lg shadow overflow-hidden'>
         <table className='w-full'>
           <thead>
@@ -80,16 +79,41 @@ async function FlightResultsTable(props: { params: SearchQuery }) {
             </tr>
           </thead>
           <tbody>
-            {flights.map((flight: FlightResult, index: number) => (
+            {bestFlights?.map((flight: FlightResult, index: number) => (
               <>
                 <tr key={index} className='border-t'>
                   <td className='px-4 py-4'>
-                    {flight.layovers.length > 0 &&
+                    {flight.layovers.length > 0 ? (
                       flight.flights.map((flight: Flight, index: number) => (
                         <div key={index} className='font-semibold'>
                           {flight.departure_airport.time}
                         </div>
-                      ))}
+                      ))
+                    ) : (
+                      <div />
+                    )}
+                  </td>
+                  <td className='px-4 py-4'>{flight.layovers.length}</td>
+                  <td className='px-4 py-4'>
+                    {toHoursAndMinutes(flight.flights[0].duration)}
+                  </td>
+                  <td className='px-4 py-4'>${flight.price}</td>
+                </tr>
+              </>
+            ))}
+            {otherFlights?.map((flight: FlightResult, index: number) => (
+              <>
+                <tr key={index} className='border-t'>
+                  <td className='px-4 py-4'>
+                    {flight.layovers.length > 0 ? (
+                      flight.flights.map((flight: Flight, index: number) => (
+                        <div key={index} className='font-semibold'>
+                          {flight.departure_airport.time}
+                        </div>
+                      ))
+                    ) : (
+                      <div />
+                    )}
                   </td>
                   <td className='px-4 py-4'>{flight.layovers.length}</td>
                   <td className='px-4 py-4'>

@@ -1,29 +1,19 @@
 "use client";
 
 import FlightResultsTable from "@/components/flight-results-table";
-import FlightResultsSkeleton from "@/components/flight-results-table-skeleton";
 import { Button } from "@/components/ui/button";
-import { useFlightSearchStore } from "@/lib/flight-search-store";
-import { SearchQuery } from "@/lib/types";
-import { Suspense } from "react";
+import { useContext } from "react";
+import { QueryContext } from "./layout";
 
 export default function SearchResults() {
   const {
-    departureDate,
-    returnDate,
-    passengers,
-    departAirport,
-    arrivalAirport,
-  } = useFlightSearchStore();
-
-  const searchParams: SearchQuery = {
-    outbound_date: departureDate,
-    return_date: returnDate,
-    adults: passengers,
-    departure_id: departAirport,
-    arrival_id: arrivalAirport,
-    currency: "USD",
-  };
+    outbound_date,
+    return_date,
+    adults,
+    departure_id,
+    arrival_id,
+    currency,
+  } = useContext(QueryContext);
 
   return (
     <div className='min-h-screen bg-gray-100'>
@@ -58,9 +48,14 @@ export default function SearchResults() {
           </div>
         </div>
 
-        <Suspense fallback={<FlightResultsSkeleton />}>
-          <FlightResultsTable params={searchParams} />
-        </Suspense>
+        <FlightResultsTable
+          outboundDate={outbound_date}
+          returnDate={return_date}
+          adults={adults}
+          departureID={departure_id}
+          arrivalID={arrival_id}
+          currency={currency}
+        />
       </main>
     </div>
   );
