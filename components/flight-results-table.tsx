@@ -14,6 +14,9 @@ export async function getSearchResults(
     currency,
   } = searchParams;
 
+console.log("departure ID);
+console.log(departure_id);
+
   const res = await fetch(
     `/api/flightSearch?departure_id=${departure_id}&arrival_id=${arrival_id}&adults=${adults}&outbound_date=${outbound_date}&return_date=${return_date}&currency=${currency}`,
     {
