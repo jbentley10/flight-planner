@@ -21,14 +21,14 @@ export interface SearchQuery {
   currency: string;
 }
 
+export interface Flight {
+  departure_airport: AirportTime;
+  arrival_airport: AirportTime;
+  duration: number;
+}
+
 export interface FlightResult {
-  flights: [
-    {
-      departure_airport: AirportTime;
-      arrival_airport: AirportTime;
-      duration: number;
-    }
-  ];
+  flights: Flight[];
   layovers: [
     {
       duration: number;

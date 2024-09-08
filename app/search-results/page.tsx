@@ -1,7 +1,9 @@
 "use client";
 
 import FlightResultsTable from "@/components/flight-results-table";
+import FlightResultsSkeleton from "@/components/flight-results-table-skeleton";
 import { Button } from "@/components/ui/button";
+import { Skeleton } from "@/components/ui/skeleton";
 import { useFlightSearchStore } from "@/lib/flight-search-store";
 import { SearchQuery } from "@/lib/types";
 import { Suspense } from "react";
@@ -56,10 +58,8 @@ export default function SearchResults() {
             <span className='text-gray-600'>PAYMENT</span>
           </div>
         </div>
-        <h1 className='text-3xl font-bold mb-4'>SELECT A DEPARTURE FLIGHT</h1>
-        <h2 className='text-xl mb-6'>Palm Springs (PSP) to New York (JFK)</h2>
 
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<FlightResultsSkeleton />}>
           <FlightResultsTable params={searchParams} />
         </Suspense>
       </main>
