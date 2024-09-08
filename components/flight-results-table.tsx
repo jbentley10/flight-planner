@@ -14,7 +14,7 @@ export async function getSearchResults(
     currency,
   } = searchParams;
 
-console.log("departure ID);
+console.log("departure ID");
 console.log(departure_id);
 
   const res = await fetch(
