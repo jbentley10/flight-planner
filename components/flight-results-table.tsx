@@ -39,12 +39,12 @@ async function FlightResultsTable({
 }): SearchQuery {
 
   const searchParams = {
-    outbound_date: props.outboundDate,
-    return_date: props.returnDate,
-    adults: props.adults,
-    departure_id: props.departureID,
-    arrival_id: props.arrivalID,
-    currency: props.currency,
+    outbound_date:outboundDate,
+    return_date: returnDate,
+    adults: adults,
+    departure_id: departureID,
+    arrival_id: arrivalID,
+    currency: currency,
   };
 
   const results = await getSearchResults(searchParams);
