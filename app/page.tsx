@@ -3,8 +3,12 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 
 import SearchForm from "@/components/search-form";
+import { fetchAirports } from "@/lib/getData";
+import SearchFormSkeleton from "@/components/search-form-skeleton";
 
 export default async function Home() {
+  const airports = await fetchAirports();
+
   return (
     <div className='min-h-screen bg-gray-100'>
       <header className='bg-white shadow'>
@@ -27,7 +31,11 @@ export default async function Home() {
               TRAVEL HAPPY.
             </h1>
           </div>
-          <SearchForm />
+          {airports ? (
+            <SearchForm airports={airports} />
+          ) : (
+            <SearchFormSkeleton />
+          )}
         </div>
       </main>
     </div>

@@ -17,11 +17,15 @@ import {
   CommandItem,
   CommandList,
 } from "@/components/ui/command";
-import { Airport } from "@/lib/types";
 
 export function AirportCombobox(props: {
   handleChange: (value: string) => void;
-  airports: Airport[];
+  airports: {
+    code: string;
+    city: string;
+    state: string | null;
+    country: string | null;
+  }[];
 }) {
   const { airports } = props;
   const [open, setOpen] = React.useState(false);

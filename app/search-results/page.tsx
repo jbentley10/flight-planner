@@ -1,9 +1,40 @@
-"use client";
-
 import FlightResultsTable from "@/components/flight-results-table";
+import FlightResultsSkeleton from "@/components/flight-results-table-skeleton";
 import { Button } from "@/components/ui/button";
+import getSearchResults from "@/lib/getData";
 
-export default function SearchResults() {
+export default async function SearchResults({
+  searchParams,
+}: {
+  searchParams: {
+    outbound_date: string;
+    return_date: string;
+    depart_airport: string;
+    arrival_airport: string;
+    adults: string;
+  };
+}) {
+  const departure_id: string | null = searchParams.depart_airport;
+  const arrival_id: string | null = searchParams.arrival_airport;
+
+  // fetch options
+  const options = {
+    method: "POST",
+    headers: {
+      "content-type": "application/json",
+    },
+    body: JSON.stringify({
+      outbound_date: searchParams.outbound_date,
+      return_date: searchParams.return_date,
+      adults: searchParams.adults,
+      departure_id: searchParams.depart_airport,
+      arrival_id: searchParams.arrival_airport,
+      currency: "USD",
+    }),
+  };
+
+  const results = await getSearchResults(options);
+
   return (
     <div className='min-h-screen bg-gray-100'>
       <header className='bg-white shadow'>
@@ -37,7 +68,15 @@ export default function SearchResults() {
           </div>
         </div>
 
-        <FlightResultsTable />
+        {typeof results != "undefined" && departure_id && arrival_id ? (
+          <FlightResultsTable
+            departureID={departure_id}
+            arrivalID={arrival_id}
+            results={results}
+          />
+        ) : (
+          <FlightResultsSkeleton />
+        )}
       </main>
     </div>
   );

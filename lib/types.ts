@@ -1,11 +1,12 @@
 // Define the TypeScript types for the GraphQL response
-export interface Airport {
-  id: number;
-  code: string;
-  city: string;
-  state: string;
-  country: string;
-}
+export type Airport = PostgrestSingleResponse<
+  {
+    code: string;
+    city: string;
+    state: string;
+    country: string;
+  }[]
+>;
 
 export type AirportTime = {
   name: string;
@@ -42,7 +43,7 @@ export interface FlightResult {
   type: string;
 }
 
-export interface FlightResults {
+export type FlightResults = {
   search_metadata: {
     id: string;
     status: string;
@@ -67,4 +68,9 @@ export interface FlightResults {
   };
   best_flights?: FlightResult[];
   other_flights?: FlightResult[];
-}
+};
+
+export type PostgrestSingleResponse<T> = {
+  data: T | null; // Assuming this is how your type looks
+  error: { message: string } | null; // Adjust based on actual structure
+};

@@ -13,55 +13,28 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Input } from "@/components/ui/input";
 import Link from "next/link";
 
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Button } from "./ui/button";
-import { Airport } from "@/lib/types";
-import { useFlightSearchStore } from "@/lib/flight-search-store";
-import { createClient, PostgrestSingleResponse } from "@supabase/supabase-js";
 
-const supabase_url = `${process.env.NEXT_PUBLIC_SUPABASE_URL}`;
-const supbase_key = `${process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY}`;
+function SearchForm(props: {
+  airports: {
+    code: string;
+    city: string;
+    state: string | null;
+    country: string | null;
+  }[];
+}) {
+  const [outboundDate, setOutboundDate] = useState<string | undefined>(
+    "2024-09-09"
+  );
+  const [returnDate, setReturnDate] = useState<string | undefined>(
+    "2024-09-10"
+  );
+  const [departAirport, setDepartAirport] = useState<string | undefined>();
+  const [arrivalAirport, setArrivalAirport] = useState<string | undefined>();
+  const [passengers, setPassengers] = useState<string>("1");
 
-const supabase = createClient(supabase_url, supbase_key);
-
-function SearchForm() {
-  const {
-    departureDate,
-    setDepartureDate,
-    returnDate,
-    setReturnDate,
-    passengers,
-    setPassengers,
-    setDepartAirport,
-    setArrivalAirport,
-  } = useFlightSearchStore();
-
-  const [airports, setAirports] = useState<Airport[]>([]);
-  const [error, setError] = useState<string | null>(null);
-
-  useEffect(() => {
-    const fetchAirports = async () => {
-      const response: PostgrestSingleResponse<Airport[]> = await supabase
-        .from("airports")
-        .select(`code, city, state, country`);
-
-      if (response.error) {
-        console.error("Error fetching airports:", response.error.message);
-        setError(response.error.message);
-        return;
-      }
-
-      if (response.data) {
-        setAirports(response.data);
-      }
-    };
-
-    fetchAirports();
-  }, []);
-
-  if (error) {
-    return <div>Error: {error}</div>;
-  }
+  const { airports } = props;
 
   return (
     <div>
@@ -108,11 +81,10 @@ function SearchForm() {
                 <Label htmlFor='departDate'>DEPARTURE DATE</Label>
                 <br />
                 <Input
-                  onChange={(e) => setDepartureDate(e.target.value)}
+                  onChange={(e) => setOutboundDate(e.target.value)}
                   type='date'
                   id='departDate'
-                  defaultValue={"2023-08-14"}
-                  value={departureDate}
+                  value={outboundDate}
                 />
               </div>
               <div>
@@ -121,7 +93,7 @@ function SearchForm() {
                   onChange={(e) => setReturnDate(e.target.value)}
                   type='date'
                   id='arriveDate'
-                  placeholder='Select a date'
+                  placeholder='Select a date' // Change this to get the day after the outboundDate, inaz
                   value={returnDate}
                 />
               </div>
@@ -130,7 +102,7 @@ function SearchForm() {
               <Label htmlFor='passengers'>NUMBER OF PASSENGERS</Label>
               <Select
                 defaultValue={passengers.toString()}
-                onValueChange={(e) => setPassengers(Number(e))}
+                onValueChange={(e) => setPassengers(Number(e).toString())}
               >
                 <SelectTrigger>
                   <SelectValue placeholder='Select number of passengers' />
@@ -144,10 +116,39 @@ function SearchForm() {
                 </SelectContent>
               </Select>
             </div>
-            <Link href='/search-results'>
+            <Link
+              aria-disabled={
+                (outboundDate &&
+                  returnDate &&
+                  departAirport &&
+                  arrivalAirport &&
+                  passengers) !== undefined
+                  ? false
+                  : true
+              }
+              href={{
+                pathname: "/search-results",
+                query: {
+                  outbound_date: outboundDate,
+                  return_date: returnDate,
+                  depart_airport: departAirport,
+                  arrival_airport: arrivalAirport,
+                  adults: passengers,
+                },
+              }}
+            >
               <Button
                 className='w-full bg-gray-600 hover:bg-gray-700'
                 size='lg'
+                disabled={
+                  (outboundDate &&
+                    returnDate &&
+                    departAirport &&
+                    arrivalAirport &&
+                    passengers) !== undefined
+                    ? false
+                    : true
+                }
               >
                 SEARCH FLIGHTS
               </Button>
