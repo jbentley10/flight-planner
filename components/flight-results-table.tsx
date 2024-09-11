@@ -15,10 +15,60 @@ function FlightResultsTable(props: {
     return `${hours} hr ${minutes} minutes`;
   }
 
-  const { departureID, arrivalID, results } = props;
+  function getTime(timeString: string) {
+    // Parse the date string into a Date object
+    const dateObject = new Date(timeString);
 
-  console.log("RESULTS ON CLIENT");
-  console.log(results);
+    // Extract the time, month, and day
+    const hours = dateObject.getHours();
+    const minutes = dateObject.getMinutes();
+
+    // Format the time as you need
+    const formattedTime = `${hours}:${minutes}`;
+    return formattedTime;
+  }
+
+  function getDate(timeString: string) {
+    // Parse the date string into a Date object
+    const dateObject = new Date(timeString);
+
+    const month = dateObject.getMonth() + 1; // Month is 0-based, so add 1
+    const day = dateObject.getDate();
+
+    return `${month}/${day}`;
+  }
+
+  const { departureID, arrivalID } = props;
+  const { best_flights, other_flights } = props.results;
+
+  function FlightDataRow(props: { flights: FlightResult[] }) {
+    return (
+      <>
+        {props.flights.map((flight: FlightResult, index: number) => (
+          <tr key={index} className='border-t'>
+            <td className='px-4 py-4'>
+              {getDate(flight.flights[0]?.departure_airport.time)}
+              {flight.flights.map((flight: Flight, index: number) => (
+                <div key={index} className='font-semibold'>
+                  Depart {flight.departure_airport.id} at &nbsp;
+                  {getTime(flight.departure_airport.time)} &nbsp; Arrive &nbsp;
+                  {flight.arrival_airport.id} at &nbsp;
+                  {getTime(flight.arrival_airport.time)}
+                </div>
+              ))}
+            </td>
+            <td className='px-4 py-4'>
+              {flight.layovers ? flight.layovers.length : "Nonstop"}
+            </td>
+            <td className='px-4 py-4'>
+              {toHoursAndMinutes(flight.flights[0].duration)}
+            </td>
+            <td className='px-4 py-4'>${flight.price}</td>
+          </tr>
+        ))}
+      </>
+    );
+  }
 
   return (
     <>
@@ -43,60 +93,8 @@ function FlightResultsTable(props: {
             </tr>
           </thead>
           <tbody>
-            {results &&
-              results.best_flights?.map(
-                (flight: FlightResult, index: number) => (
-                  <>
-                    <tr key={index} className='border-t'>
-                      <td className='px-4 py-4'>
-                        {flight.layovers.length > 0 ? (
-                          flight.flights.map(
-                            (flight: Flight, index: number) => (
-                              <div key={index} className='font-semibold'>
-                                {flight.departure_airport.time}
-                              </div>
-                            )
-                          )
-                        ) : (
-                          <div />
-                        )}
-                      </td>
-                      <td className='px-4 py-4'>{flight.layovers.length}</td>
-                      <td className='px-4 py-4'>
-                        {toHoursAndMinutes(flight.flights[0].duration)}
-                      </td>
-                      <td className='px-4 py-4'>${flight.price}</td>
-                    </tr>
-                  </>
-                )
-              )}
-            {results &&
-              results.other_flights?.map(
-                (flight: FlightResult, index: number) => (
-                  <>
-                    <tr key={index} className='border-t'>
-                      <td className='px-4 py-4'>
-                        {flight.layovers.length > 0 ? (
-                          flight.flights.map(
-                            (flight: Flight, index: number) => (
-                              <div key={index} className='font-semibold'>
-                                {flight.departure_airport.time}
-                              </div>
-                            )
-                          )
-                        ) : (
-                          <div />
-                        )}
-                      </td>
-                      <td className='px-4 py-4'>{flight.layovers.length}</td>
-                      <td className='px-4 py-4'>
-                        {toHoursAndMinutes(flight.flights[0].duration)}
-                      </td>
-                      <td className='px-4 py-4'>${flight.price}</td>
-                    </tr>
-                  </>
-                )
-              )}
+            {best_flights && <FlightDataRow flights={best_flights} />}
+            {other_flights && <FlightDataRow flights={other_flights} />}
           </tbody>
         </table>
       </div>

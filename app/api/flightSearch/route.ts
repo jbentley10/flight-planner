@@ -12,18 +12,12 @@ export async function POST(req: NextRequest) {
   const arrival_id = body.arrival_id;
   const currency = body.currency;
 
-  console.log("URL");
-  console.log(
-    `https://serpapi.com/search?engine=google_flights&api_key=${apiKey}&departure_id=${departure_id}&arrival_id=${arrival_id}&adults=${adults}&outbound_date=${outbound_date}&return_date=${return_date}&currency=${currency}`
-  );
-
   try {
     const response = await fetch(
       `https://serpapi.com/search?engine=google_flights&api_key=${apiKey}&departure_id=${departure_id}&arrival_id=${arrival_id}&adults=${adults}&outbound_date=${outbound_date}&return_date=${return_date}&currency=${currency}`
     );
-    console.log("RESPONSE FROM SERVER");
-    console.log(response);
-    return NextResponse.json(response.body);
+    const data = await response.json();
+    return NextResponse.json(data);
   } catch {
     return NextResponse.json({ error: "There was an error" });
   }

@@ -31,7 +31,7 @@ export interface Flight {
 
 export interface FlightResult {
   flights: Flight[];
-  layovers: [
+  layovers?: [
     {
       duration: number;
       name: string;
