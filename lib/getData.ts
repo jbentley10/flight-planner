@@ -6,7 +6,7 @@ export default async function getSearchResults(options: object) {
   const url = process.env.VERCEL_URL;
   try {
     // Execute the fetch API
-    const res = await fetch(`${url}/api/flightSearch`, options);
+    const res = await fetch(`https://${url}/api/flightSearch`, options);
 
     // Check if the response is OK (status code 200-299)
     if (!res.ok) {
