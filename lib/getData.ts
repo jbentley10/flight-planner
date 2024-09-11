@@ -3,7 +3,7 @@ import { Database } from "@/lib/database.types";
 import { FlightResults } from "./types";
 
 export default async function getSearchResults(options: object) {
-  const url = process.env.FETCH_URL;
+  const url = process.env.VERCEL_URL;
   try {
     // Execute the fetch API
     const res = await fetch(`${url}/api/flightSearch`, options);
