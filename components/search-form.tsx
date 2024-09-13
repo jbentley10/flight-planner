@@ -2,19 +2,13 @@
 
 import { AirportCombobox } from "@/components/airport-combobox";
 import { Label } from "@/components/ui/label";
-import {
-  SelectItem,
-  Select,
-  SelectContent,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Input } from "@/components/ui/input";
 import Link from "next/link";
 
 import React, { useState } from "react";
 import { Button } from "./ui/button";
+import { getStringDate } from "@/lib/utils";
 
 function SearchForm(props: {
   airports: {
@@ -25,10 +19,10 @@ function SearchForm(props: {
   }[];
 }) {
   const [outboundDate, setOutboundDate] = useState<string | undefined>(
-    new Date().toString()
+    getStringDate(new Date().toString())
   );
   const [returnDate, setReturnDate] = useState<string | undefined>(
-    new Date().toString()
+    getStringDate(new Date().toString())
   );
   const [departAirport, setDepartAirport] = useState<string | undefined>();
   const [arrivalAirport, setArrivalAirport] = useState<string | undefined>();
