@@ -25,10 +25,10 @@ function SearchForm(props: {
   }[];
 }) {
   const [outboundDate, setOutboundDate] = useState<string | undefined>(
-    "2024-09-09"
+    new Date().toString()
   );
   const [returnDate, setReturnDate] = useState<string | undefined>(
-    "2024-09-10"
+    new Date().toString()
   );
   const [departAirport, setDepartAirport] = useState<string | undefined>();
   const [arrivalAirport, setArrivalAirport] = useState<string | undefined>();
@@ -39,8 +39,8 @@ function SearchForm(props: {
   return (
     <div>
       <div className=''>
-        <div className='bg-white p-6 rounded-lg shadow'>
-          <h2 className='text-2xl font-semibold mb-6'>
+        <div className='bg-card border-4 p-6 rounded-lg shadow'>
+          <h2 className='text-2xl text-primary font-semibold mb-6'>
             Find your perfect flight in seconds.
           </h2>
           <form>
@@ -100,21 +100,14 @@ function SearchForm(props: {
             </div>
             <div className='mb-6'>
               <Label htmlFor='passengers'>NUMBER OF PASSENGERS</Label>
-              <Select
-                defaultValue={passengers.toString()}
-                onValueChange={(e) => setPassengers(Number(e).toString())}
-              >
-                <SelectTrigger>
-                  <SelectValue placeholder='Select number of passengers' />
-                </SelectTrigger>
-                <SelectContent>
-                  {[1, 2, 3, 4, 5].map((num) => (
-                    <SelectItem key={num} value={num.toString()}>
-                      {num}
-                    </SelectItem>
-                  ))}
-                </SelectContent>
-              </Select>
+              <br />
+              <Input
+                onChange={(e) => setPassengers(e.target.value)}
+                type='text'
+                id='passengersZ'
+                value={passengers}
+                className={"w-8 text-slab font-bold"}
+              />
             </div>
             <Link
               aria-disabled={
@@ -138,7 +131,7 @@ function SearchForm(props: {
               }}
             >
               <Button
-                className='w-full bg-gray-600 hover:bg-gray-700'
+                className='w-full'
                 size='lg'
                 disabled={
                   (outboundDate &&

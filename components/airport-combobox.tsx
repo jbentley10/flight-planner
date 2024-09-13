@@ -43,7 +43,7 @@ export function AirportCombobox(props: {
           variant='outline'
           role='combobox'
           aria-expanded={open}
-          className='w-[200px] justify-between'
+          className='w-[150px] justify-between'
         >
           {value
             ? sortedAirports.find((airport) => airport.city === value)?.city ||
