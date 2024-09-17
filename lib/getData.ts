@@ -4,7 +4,7 @@ export default async function getSearchResults(options: object) {
   try {
     // Execute the fetch API
     const res = await fetch(
-      `${process.env.VERCEL_URL}/api/flightSearch`,
+      `https://${process.env.VERCEL_URL}/api/flightSearch`,
       options
     );
 
