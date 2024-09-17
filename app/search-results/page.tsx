@@ -34,6 +34,7 @@ export default async function SearchResults({
   };
 
   const results = await getSearchResults(options);
+  console.log(results);
 
   return (
     <div className='min-h-screen bg-gray-100'>
