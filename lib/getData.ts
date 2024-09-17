@@ -1,5 +1,3 @@
-import { createClient } from "@supabase/supabase-js";
-import { Database } from "@/lib/database.types";
 import { FlightResults } from "./types";
 
 export default async function getSearchResults(options: object) {
@@ -29,18 +27,30 @@ export default async function getSearchResults(options: object) {
 }
 
 export async function fetchAirports() {
-  const supabase_url = `${process.env.NEXT_PUBLIC_SUPABASE_URL}`;
-  const supbase_key = `${process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY}`;
-
-  const supabase = createClient<Database>(supabase_url, supbase_key);
-
-  const airportsQuery = await supabase
-    .from("airports")
-    .select("code, city, state, country");
-
-  const { data, error } = await airportsQuery;
-
-  if (error) throw error;
-
-  return data;
+  try {
+    const airportsData: {
+      default: Array<{
+        code: string;
+        city: string;
+        state: string | null;
+        country: string | null;
+      }>;
+    } = await import("../data/airports.json");
+    return airportsData.default.map(
+      (airport: {
+        code: string;
+        city: string;
+        state: string | null;
+        country: string | null;
+      }) => ({
+        code: airport.code,
+        city: airport.city,
+        state: airport.state,
+        country: airport.country,
+      })
+    );
+  } catch (error) {
+    console.error("Error loading airports data:", error);
+    throw error;
+  }
 }

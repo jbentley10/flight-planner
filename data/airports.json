@@ -1,0 +1,5168 @@
+[
+  {
+    "code": "ABE",
+    "city": "Allentown",
+    "state": "PA",
+    "country": "US"
+  },
+  {
+    "code": "ABI",
+    "city": "Abilene",
+    "state": "TX",
+    "country": "US"
+  },
+  {
+    "code": "ABL",
+    "city": "Ambler",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "ABQ",
+    "city": "Albuquerque",
+    "state": "NM",
+    "country": "US"
+  },
+  {
+    "code": "ABR",
+    "city": "Aberdeen",
+    "state": "SD",
+    "country": "US"
+  },
+  {
+    "code": "ABY",
+    "city": "Albany",
+    "state": "GA",
+    "country": "US"
+  },
+  {
+    "code": "ACK",
+    "city": "Nantucket",
+    "state": "MA",
+    "country": "US"
+  },
+  {
+    "code": "ACT",
+    "city": "Waco",
+    "state": "TX",
+    "country": "US"
+  },
+  {
+    "code": "ACV",
+    "city": "Arcata/Eureka",
+    "state": "CA",
+    "country": "US"
+  },
+  {
+    "code": "ACY",
+    "city": "Atlantic City",
+    "state": "NJ",
+    "country": "US"
+  },
+  {
+    "code": "ADK",
+    "city": "Adak",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "ADQ",
+    "city": "Kodiak",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "ADT",
+    "city": "Ada",
+    "state": "OK",
+    "country": "US"
+  },
+  {
+    "code": "ADW",
+    "city": "Camp Springs",
+    "state": "MD",
+    "country": "US"
+  },
+  {
+    "code": "AEX",
+    "city": "Alexandria",
+    "state": "LA",
+    "country": "US"
+  },
+  {
+    "code": "AFW",
+    "city": "Fort Worth",
+    "state": "TX",
+    "country": "US"
+  },
+  {
+    "code": "AGC",
+    "city": "Pittsburgh",
+    "state": "PA",
+    "country": "US"
+  },
+  {
+    "code": "AGS",
+    "city": "Augusta",
+    "state": "GA",
+    "country": "US"
+  },
+  {
+    "code": "AHN",
+    "city": "Athens",
+    "state": "GA",
+    "country": "US"
+  },
+  {
+    "code": "AIA",
+    "city": "Alliance",
+    "state": "NE",
+    "country": "US"
+  },
+  {
+    "code": "AIN",
+    "city": "Wainwright",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "AKC",
+    "city": "Akron",
+    "state": "OH",
+    "country": "US"
+  },
+  {
+    "code": "AKN",
+    "city": "King Salmon",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "AKP",
+    "city": "Anaktuvuk Pass",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "ALB",
+    "city": "Albany",
+    "state": "NY",
+    "country": "US"
+  },
+  {
+    "code": "ALI",
+    "city": "Alice",
+    "state": "TX",
+    "country": "US"
+  },
+  {
+    "code": "ALM",
+    "city": "Alamogordo",
+    "state": "NM",
+    "country": "US"
+  },
+  {
+    "code": "ALN",
+    "city": "Alton/St Louis",
+    "state": "IL",
+    "country": "US"
+  },
+  {
+    "code": "ALO",
+    "city": "Waterloo",
+    "state": "IA",
+    "country": "US"
+  },
+  {
+    "code": "ALS",
+    "city": "Alamosa",
+    "state": "CO",
+    "country": "US"
+  },
+  {
+    "code": "ALW",
+    "city": "Walla Walla",
+    "state": "WA",
+    "country": "US"
+  },
+  {
+    "code": "AMA",
+    "city": "Amarillo",
+    "state": "TX",
+    "country": "US"
+  },
+  {
+    "code": "ANB",
+    "city": "Anniston",
+    "state": "AL",
+    "country": "US"
+  },
+  {
+    "code": "ANC",
+    "city": "Anchorage",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "AND",
+    "city": "Anderson",
+    "state": "SC",
+    "country": "US"
+  },
+  {
+    "code": "ANI",
+    "city": "Aniak",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "ANN",
+    "city": "Metlakatla",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "ANV",
+    "city": "Anvik",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "AOO",
+    "city": "Altoona",
+    "state": "PA",
+    "country": "US"
+  },
+  {
+    "code": "APA",
+    "city": "Denver",
+    "state": "CO",
+    "country": "US"
+  },
+  {
+    "code": "APF",
+    "city": "Naples",
+    "state": "FL",
+    "country": "US"
+  },
+  {
+    "code": "APG",
+    "city": "Aberdeen",
+    "state": "MD",
+    "country": "US"
+  },
+  {
+    "code": "APN",
+    "city": "Alpena",
+    "state": "MI",
+    "country": "US"
+  },
+  {
+    "code": "ARA",
+    "city": "New Iberia",
+    "state": "LA",
+    "country": "US"
+  },
+  {
+    "code": "ARC",
+    "city": "Arctic Village",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "ART",
+    "city": "Watertown",
+    "state": "NY",
+    "country": "US"
+  },
+  {
+    "code": "ASE",
+    "city": "Aspen",
+    "state": "CO",
+    "country": "US"
+  },
+  {
+    "code": "AST",
+    "city": "Astoria",
+    "state": "OR",
+    "country": "US"
+  },
+  {
+    "code": "ATK",
+    "city": "Atqasuk",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "ATL",
+    "city": "Atlanta",
+    "state": "GA",
+    "country": "US"
+  },
+  {
+    "code": "ATW",
+    "city": "Appleton",
+    "state": "WI",
+    "country": "US"
+  },
+  {
+    "code": "ATY",
+    "city": "Watertown",
+    "state": "SD",
+    "country": "US"
+  },
+  {
+    "code": "AUG",
+    "city": "Augusta",
+    "state": "ME",
+    "country": "US"
+  },
+  {
+    "code": "AUS",
+    "city": "Austin",
+    "state": "TX",
+    "country": "US"
+  },
+  {
+    "code": "AUW",
+    "city": "Wausau",
+    "state": "WI",
+    "country": "US"
+  },
+  {
+    "code": "AVL",
+    "city": "Asheville",
+    "state": "NC",
+    "country": "US"
+  },
+  {
+    "code": "AVP",
+    "city": "Wilkes-Barre/Scranton",
+    "state": "PA",
+    "country": "US"
+  },
+  {
+    "code": "AXN",
+    "city": "Alexandria",
+    "state": "MN",
+    "country": "US"
+  },
+  {
+    "code": "AZA",
+    "city": "Mesa",
+    "state": "AZ",
+    "country": "US"
+  },
+  {
+    "code": "AZO",
+    "city": "Kalamazoo",
+    "state": "MI",
+    "country": "US"
+  },
+  {
+    "code": "BAB",
+    "city": "Beale Air Force Base",
+    "state": "CA",
+    "country": "US"
+  },
+  {
+    "code": "BAD",
+    "city": "Bossier City",
+    "state": "LA",
+    "country": "US"
+  },
+  {
+    "code": "BAF",
+    "city": "Westfield",
+    "state": "MA",
+    "country": "US"
+  },
+  {
+    "code": "BBD",
+    "city": "Brady",
+    "state": "TX",
+    "country": "US"
+  },
+  {
+    "code": "BCE",
+    "city": "Bryce Canyon",
+    "state": "UT",
+    "country": "US"
+  },
+  {
+    "code": "BCT",
+    "city": "Boca Raton",
+    "state": "FL",
+    "country": "US"
+  },
+  {
+    "code": "BDE",
+    "city": "Baudette",
+    "state": "MN",
+    "country": "US"
+  },
+  {
+    "code": "BDL",
+    "city": "Hartford",
+    "state": "CT",
+    "country": "US"
+  },
+  {
+    "code": "BDR",
+    "city": "Bridgeport",
+    "state": "CT",
+    "country": "US"
+  },
+  {
+    "code": "BED",
+    "city": "Bedford",
+    "state": "MA",
+    "country": "US"
+  },
+  {
+    "code": "BET",
+    "city": "Bethel",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "BFD",
+    "city": "Bradford",
+    "state": "PA",
+    "country": "US"
+  },
+  {
+    "code": "BFF",
+    "city": "Scottsbluff",
+    "state": "NE",
+    "country": "US"
+  },
+  {
+    "code": "BFI",
+    "city": "Seattle",
+    "state": "WA",
+    "country": "US"
+  },
+  {
+    "code": "BFK",
+    "city": "Aurora",
+    "state": "CO",
+    "country": "US"
+  },
+  {
+    "code": "BFL",
+    "city": "Bakersfield",
+    "state": "CA",
+    "country": "US"
+  },
+  {
+    "code": "BFM",
+    "city": "Mobile",
+    "state": "AL",
+    "country": "US"
+  },
+  {
+    "code": "BFP",
+    "city": "Beaver Falls",
+    "state": "PA",
+    "country": "US"
+  },
+  {
+    "code": "BGM",
+    "city": "Binghamton",
+    "state": "NY",
+    "country": "US"
+  },
+  {
+    "code": "BGR",
+    "city": "Bangor",
+    "state": "ME",
+    "country": "US"
+  },
+  {
+    "code": "BHB",
+    "city": "Bar Harbor",
+    "state": "ME",
+    "country": "US"
+  },
+  {
+    "code": "BHM",
+    "city": "Birmingham",
+    "state": "AL",
+    "country": "US"
+  },
+  {
+    "code": "BIF",
+    "city": "Fort Bliss/El Paso",
+    "state": "TX",
+    "country": "US"
+  },
+  {
+    "code": "BIG",
+    "city": "Delta Junction Ft Greely",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "BIH",
+    "city": "Bishop",
+    "state": "CA",
+    "country": "US"
+  },
+  {
+    "code": "BIL",
+    "city": "Billings",
+    "state": "MT",
+    "country": "US"
+  },
+  {
+    "code": "BIS",
+    "city": "Bismarck",
+    "state": "ND",
+    "country": "US"
+  },
+  {
+    "code": "BIX",
+    "city": "Biloxi",
+    "state": "MS",
+    "country": "US"
+  },
+  {
+    "code": "BJC",
+    "city": "Denver",
+    "state": "CO",
+    "country": "US"
+  },
+  {
+    "code": "BJI",
+    "city": "Bemidji",
+    "state": "MN",
+    "country": "US"
+  },
+  {
+    "code": "BKE",
+    "city": "Baker City",
+    "state": "OR",
+    "country": "US"
+  },
+  {
+    "code": "BKG",
+    "city": "Branson",
+    "state": "MO",
+    "country": "US"
+  },
+  {
+    "code": "BKH",
+    "city": "Kekaha",
+    "state": "HI",
+    "country": "US"
+  },
+  {
+    "code": "BKL",
+    "city": "Cleveland",
+    "state": "OH",
+    "country": "US"
+  },
+  {
+    "code": "BKW",
+    "city": "Beaver",
+    "state": "WV",
+    "country": "US"
+  },
+  {
+    "code": "BLD",
+    "city": "Boulder City",
+    "state": "NV",
+    "country": "US"
+  },
+  {
+    "code": "BLF",
+    "city": "Bluefield",
+    "state": "WV",
+    "country": "US"
+  },
+  {
+    "code": "BLH",
+    "city": "Blythe",
+    "state": "CA",
+    "country": "US"
+  },
+  {
+    "code": "BLI",
+    "city": "Bellingham",
+    "state": "WA",
+    "country": "US"
+  },
+  {
+    "code": "BLV",
+    "city": "Belleville",
+    "state": "IL",
+    "country": "US"
+  },
+  {
+    "code": "BMG",
+    "city": "Bloomington",
+    "state": "IN",
+    "country": "US"
+  },
+  {
+    "code": "BMI",
+    "city": "Bloomington/Normal",
+    "state": "IL",
+    "country": "US"
+  },
+  {
+    "code": "BNA",
+    "city": "Nashville",
+    "state": "TN",
+    "country": "US"
+  },
+  {
+    "code": "BNO",
+    "city": "Burns",
+    "state": "OR",
+    "country": "US"
+  },
+  {
+    "code": "BOI",
+    "city": "Boise",
+    "state": "ID",
+    "country": "US"
+  },
+  {
+    "code": "BOS",
+    "city": "Boston",
+    "state": "MA",
+    "country": "US"
+  },
+  {
+    "code": "BPI",
+    "city": "Big Piney",
+    "state": "WY",
+    "country": "US"
+  },
+  {
+    "code": "BPT",
+    "city": "Beaumont/Port Arthur",
+    "state": "TX",
+    "country": "US"
+  },
+  {
+    "code": "BQK",
+    "city": "Brunswick",
+    "state": "GA",
+    "country": "US"
+  },
+  {
+    "code": "BRD",
+    "city": "Brainerd",
+    "state": "MN",
+    "country": "US"
+  },
+  {
+    "code": "BRL",
+    "city": "Burlington",
+    "state": "IA",
+    "country": "US"
+  },
+  {
+    "code": "BRO",
+    "city": "Brownsville",
+    "state": "TX",
+    "country": "US"
+  },
+  {
+    "code": "BRW",
+    "city": "Utqiaġvik",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "BTI",
+    "city": "Barter Island",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "BTL",
+    "city": "Battle Creek",
+    "state": "MI",
+    "country": "US"
+  },
+  {
+    "code": "BTM",
+    "city": "Butte",
+    "state": "MT",
+    "country": "US"
+  },
+  {
+    "code": "BTR",
+    "city": "Baton Rouge",
+    "state": "LA",
+    "country": "US"
+  },
+  {
+    "code": "BTV",
+    "city": "South Burlington",
+    "state": "VT",
+    "country": "US"
+  },
+  {
+    "code": "BUF",
+    "city": "Buffalo",
+    "state": "NY",
+    "country": "US"
+  },
+  {
+    "code": "BUR",
+    "city": "Burbank",
+    "state": "CA",
+    "country": "US"
+  },
+  {
+    "code": "BVY",
+    "city": "Beverly / Danvers",
+    "state": "MA",
+    "country": "US"
+  },
+  {
+    "code": "BWG",
+    "city": "Bowling Green",
+    "state": "KY",
+    "country": "US"
+  },
+  {
+    "code": "BWI",
+    "city": "Baltimore",
+    "state": "MD",
+    "country": "US"
+  },
+  {
+    "code": "BYH",
+    "city": "Blytheville",
+    "state": "AR",
+    "country": "US"
+  },
+  {
+    "code": "BYI",
+    "city": "Burley",
+    "state": "ID",
+    "country": "US"
+  },
+  {
+    "code": "BYS",
+    "city": "Fort Irwin/Barstow",
+    "state": "CA",
+    "country": "US"
+  },
+  {
+    "code": "BZN",
+    "city": "Bozeman",
+    "state": "MT",
+    "country": "US"
+  },
+  {
+    "code": "CAE",
+    "city": "Columbia",
+    "state": "SC",
+    "country": "US"
+  },
+  {
+    "code": "CAK",
+    "city": "Akron",
+    "state": "OH",
+    "country": "US"
+  },
+  {
+    "code": "CAR",
+    "city": "Caribou",
+    "state": "ME",
+    "country": "US"
+  },
+  {
+    "code": "CBM",
+    "city": "Columbus",
+    "state": "MS",
+    "country": "US"
+  },
+  {
+    "code": "CCR",
+    "city": "Concord",
+    "state": "CA",
+    "country": "US"
+  },
+  {
+    "code": "CCY",
+    "city": "Charles City",
+    "state": "IA",
+    "country": "US"
+  },
+  {
+    "code": "CDB",
+    "city": "Cold Bay",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "CDC",
+    "city": "Cedar City",
+    "state": "UT",
+    "country": "US"
+  },
+  {
+    "code": "CDR",
+    "city": "Chadron",
+    "state": "NE",
+    "country": "US"
+  },
+  {
+    "code": "CDS",
+    "city": "Childress",
+    "state": "TX",
+    "country": "US"
+  },
+  {
+    "code": "CDV",
+    "city": "Cordova",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "CEC",
+    "city": "Crescent City",
+    "state": "CA",
+    "country": "US"
+  },
+  {
+    "code": "CEF",
+    "city": "Chicopee",
+    "state": "MA",
+    "country": "US"
+  },
+  {
+    "code": "CEW",
+    "city": "Crestview",
+    "state": "FL",
+    "country": "US"
+  },
+  {
+    "code": "CEZ",
+    "city": "Cortez",
+    "state": "CO",
+    "country": "US"
+  },
+  {
+    "code": "CGF",
+    "city": "Cleveland",
+    "state": "OH",
+    "country": "US"
+  },
+  {
+    "code": "CGI",
+    "city": "Cape Girardeau",
+    "state": "MO",
+    "country": "US"
+  },
+  {
+    "code": "CHA",
+    "city": "Chattanooga",
+    "state": "TN",
+    "country": "US"
+  },
+  {
+    "code": "CHO",
+    "city": "Charlottesville",
+    "state": "VA",
+    "country": "US"
+  },
+  {
+    "code": "CHS",
+    "city": "Charleston",
+    "state": "SC",
+    "country": "US"
+  },
+  {
+    "code": "CID",
+    "city": "Cedar Rapids",
+    "state": "IA",
+    "country": "US"
+  },
+  {
+    "code": "CIU",
+    "city": "Kincheloe",
+    "state": "MI",
+    "country": "US"
+  },
+  {
+    "code": "CKB",
+    "city": "Bridgeport",
+    "state": "WV",
+    "country": "US"
+  },
+  {
+    "code": "CLD",
+    "city": "Carlsbad",
+    "state": "CA",
+    "country": "US"
+  },
+  {
+    "code": "CLE",
+    "city": "Cleveland",
+    "state": "OH",
+    "country": "US"
+  },
+  {
+    "code": "CLL",
+    "city": "College Station",
+    "state": "TX",
+    "country": "US"
+  },
+  {
+    "code": "CLM",
+    "city": "Port Angeles",
+    "state": "WA",
+    "country": "US"
+  },
+  {
+    "code": "CLT",
+    "city": "Charlotte",
+    "state": "NC",
+    "country": "US"
+  },
+  {
+    "code": "CLU",
+    "city": "Columbus",
+    "state": "IN",
+    "country": "US"
+  },
+  {
+    "code": "CMH",
+    "city": "Columbus",
+    "state": "OH",
+    "country": "US"
+  },
+  {
+    "code": "CMI",
+    "city": "Savoy",
+    "state": "IL",
+    "country": "US"
+  },
+  {
+    "code": "CMX",
+    "city": "Hancock",
+    "state": "MI",
+    "country": "US"
+  },
+  {
+    "code": "CNM",
+    "city": "Carlsbad",
+    "state": "NM",
+    "country": "US"
+  },
+  {
+    "code": "CNU",
+    "city": "Chanute",
+    "state": "KS",
+    "country": "US"
+  },
+  {
+    "code": "CNY",
+    "city": "Moab",
+    "state": "UT",
+    "country": "US"
+  },
+  {
+    "code": "COD",
+    "city": "Cody",
+    "state": "WY",
+    "country": "US"
+  },
+  {
+    "code": "COE",
+    "city": "Coeur d'Alene",
+    "state": "ID",
+    "country": "US"
+  },
+  {
+    "code": "COF",
+    "city": "Cocoa Beach",
+    "state": "FL",
+    "country": "US"
+  },
+  {
+    "code": "CON",
+    "city": "Concord",
+    "state": "NH",
+    "country": "US"
+  },
+  {
+    "code": "COS",
+    "city": "Colorado Springs",
+    "state": "CO",
+    "country": "US"
+  },
+  {
+    "code": "COU",
+    "city": "Columbia",
+    "state": "MO",
+    "country": "US"
+  },
+  {
+    "code": "CPR",
+    "city": "Casper",
+    "state": "WY",
+    "country": "US"
+  },
+  {
+    "code": "CRE",
+    "city": "North Myrtle Beach",
+    "state": "SC",
+    "country": "US"
+  },
+  {
+    "code": "CRG",
+    "city": "Jacksonville",
+    "state": "FL",
+    "country": "US"
+  },
+  {
+    "code": "CRP",
+    "city": "Corpus Christi",
+    "state": "TX",
+    "country": "US"
+  },
+  {
+    "code": "CRW",
+    "city": "Charleston",
+    "state": "WV",
+    "country": "US"
+  },
+  {
+    "code": "CSG",
+    "city": "Columbus",
+    "state": "GA",
+    "country": "US"
+  },
+  {
+    "code": "CSV",
+    "city": "Crossville",
+    "state": "TN",
+    "country": "US"
+  },
+  {
+    "code": "CTB",
+    "city": "Cut Bank",
+    "state": "MT",
+    "country": "US"
+  },
+  {
+    "code": "CUB",
+    "city": "Columbia",
+    "state": "SC",
+    "country": "US"
+  },
+  {
+    "code": "CVG",
+    "city": "Cincinnati / Covington",
+    "state": "KY",
+    "country": "US"
+  },
+  {
+    "code": "CVN",
+    "city": "Clovis",
+    "state": "NM",
+    "country": "US"
+  },
+  {
+    "code": "CVO",
+    "city": "Corvallis",
+    "state": "OR",
+    "country": "US"
+  },
+  {
+    "code": "CVS",
+    "city": "Clovis",
+    "state": "NM",
+    "country": "US"
+  },
+  {
+    "code": "CWA",
+    "city": "Mosinee",
+    "state": "WI",
+    "country": "US"
+  },
+  {
+    "code": "CXO",
+    "city": "Houston",
+    "state": "TX",
+    "country": "US"
+  },
+  {
+    "code": "CYS",
+    "city": "Cheyenne",
+    "state": "WY",
+    "country": "US"
+  },
+  {
+    "code": "CZF",
+    "city": "Cape Romanzof",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "DAA",
+    "city": "Fort Belvoir",
+    "state": "VA",
+    "country": "US"
+  },
+  {
+    "code": "DAB",
+    "city": "Daytona Beach",
+    "state": "FL",
+    "country": "US"
+  },
+  {
+    "code": "DAG",
+    "city": "Daggett",
+    "state": "CA",
+    "country": "US"
+  },
+  {
+    "code": "DAL",
+    "city": "Dallas",
+    "state": "TX",
+    "country": "US"
+  },
+  {
+    "code": "DAN",
+    "city": "Danville",
+    "state": "VA",
+    "country": "US"
+  },
+  {
+    "code": "DAY",
+    "city": "Dayton",
+    "state": "OH",
+    "country": "US"
+  },
+  {
+    "code": "DBQ",
+    "city": "Dubuque",
+    "state": "IA",
+    "country": "US"
+  },
+  {
+    "code": "DCA",
+    "city": "Washington",
+    "state": "DC",
+    "country": "US"
+  },
+  {
+    "code": "DDC",
+    "city": "Dodge City",
+    "state": "KS",
+    "country": "US"
+  },
+  {
+    "code": "DEC",
+    "city": "Decatur",
+    "state": "IL",
+    "country": "US"
+  },
+  {
+    "code": "DEN",
+    "city": "Denver",
+    "state": "CO",
+    "country": "US"
+  },
+  {
+    "code": "DET",
+    "city": "Detroit",
+    "state": "MI",
+    "country": "US"
+  },
+  {
+    "code": "DFW",
+    "city": "Dallas-Fort Worth",
+    "state": "TX",
+    "country": "US"
+  },
+  {
+    "code": "DHN",
+    "city": "Dothan",
+    "state": "AL",
+    "country": "US"
+  },
+  {
+    "code": "DHT",
+    "city": "Dalhart",
+    "state": "TX",
+    "country": "US"
+  },
+  {
+    "code": "DIK",
+    "city": "Dickinson",
+    "state": "ND",
+    "country": "US"
+  },
+  {
+    "code": "DLF",
+    "city": "Del Rio",
+    "state": "TX",
+    "country": "US"
+  },
+  {
+    "code": "DLG",
+    "city": "Dillingham",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "DLH",
+    "city": "Duluth",
+    "state": "MN",
+    "country": "US"
+  },
+  {
+    "code": "DLS",
+    "city": "Dallesport / The Dalles",
+    "state": "OR",
+    "country": "US"
+  },
+  {
+    "code": "DMA",
+    "city": "Tucson",
+    "state": "AZ",
+    "country": "US"
+  },
+  {
+    "code": "DMN",
+    "city": "Deming",
+    "state": "NM",
+    "country": "US"
+  },
+  {
+    "code": "DNL",
+    "city": "Augusta",
+    "state": "GA",
+    "country": "US"
+  },
+  {
+    "code": "DOV",
+    "city": "Dover",
+    "state": "DE",
+    "country": "US"
+  },
+  {
+    "code": "DPA",
+    "city": "Chicago/West Chicago",
+    "state": "IL",
+    "country": "US"
+  },
+  {
+    "code": "DRA",
+    "city": "Mercury",
+    "state": "NV",
+    "country": "US"
+  },
+  {
+    "code": "DRG",
+    "city": "Deering",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "DRI",
+    "city": "DeRidder",
+    "state": "LA",
+    "country": "US"
+  },
+  {
+    "code": "DRO",
+    "city": "Durango",
+    "state": "CO",
+    "country": "US"
+  },
+  {
+    "code": "DRT",
+    "city": "Del Rio",
+    "state": "TX",
+    "country": "US"
+  },
+  {
+    "code": "DSI",
+    "city": "Destin",
+    "state": "FL",
+    "country": "US"
+  },
+  {
+    "code": "DSM",
+    "city": "Des Moines",
+    "state": "IA",
+    "country": "US"
+  },
+  {
+    "code": "DTW",
+    "city": "Detroit",
+    "state": "MI",
+    "country": "US"
+  },
+  {
+    "code": "DUA",
+    "city": "Durant",
+    "state": "OK",
+    "country": "US"
+  },
+  {
+    "code": "DUG",
+    "city": "Douglas Bisbee",
+    "state": "AZ",
+    "country": "US"
+  },
+  {
+    "code": "DUJ",
+    "city": "Dubois",
+    "state": "PA",
+    "country": "US"
+  },
+  {
+    "code": "DUT",
+    "city": "Unalaska",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "DVL",
+    "city": "Devils Lake",
+    "state": "ND",
+    "country": "US"
+  },
+  {
+    "code": "DXR",
+    "city": "Danbury",
+    "state": "CT",
+    "country": "US"
+  },
+  {
+    "code": "DYS",
+    "city": "Abilene",
+    "state": "TX",
+    "country": "US"
+  },
+  {
+    "code": "EAR",
+    "city": "Kearney",
+    "state": "NE",
+    "country": "US"
+  },
+  {
+    "code": "EAT",
+    "city": "Wenatchee",
+    "state": "WA",
+    "country": "US"
+  },
+  {
+    "code": "EAU",
+    "city": "Eau Claire",
+    "state": "WI",
+    "country": "US"
+  },
+  {
+    "code": "ECG",
+    "city": "Elizabeth City",
+    "state": "NC",
+    "country": "US"
+  },
+  {
+    "code": "ECP",
+    "city": "Panama City Beach",
+    "state": "FL",
+    "country": "US"
+  },
+  {
+    "code": "EDF",
+    "city": "Anchorage",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "EDW",
+    "city": "Edwards",
+    "state": "CA",
+    "country": "US"
+  },
+  {
+    "code": "EED",
+    "city": "Needles",
+    "state": "CA",
+    "country": "US"
+  },
+  {
+    "code": "EEN",
+    "city": "Keene",
+    "state": "NH",
+    "country": "US"
+  },
+  {
+    "code": "EFD",
+    "city": "Houston",
+    "state": "TX",
+    "country": "US"
+  },
+  {
+    "code": "EGE",
+    "city": "Eagle",
+    "state": "CO",
+    "country": "US"
+  },
+  {
+    "code": "EGI",
+    "city": "Crestview",
+    "state": "FL",
+    "country": "US"
+  },
+  {
+    "code": "EGX",
+    "city": "Egegik",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "EHM",
+    "city": "Cape Newenham",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "EIL",
+    "city": "Fairbanks",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "EKA",
+    "city": "Eureka",
+    "state": "CA",
+    "country": "US"
+  },
+  {
+    "code": "EKN",
+    "city": "Elkins",
+    "state": "WV",
+    "country": "US"
+  },
+  {
+    "code": "EKO",
+    "city": "Elko",
+    "state": "NV",
+    "country": "US"
+  },
+  {
+    "code": "ELD",
+    "city": "El Dorado",
+    "state": "AR",
+    "country": "US"
+  },
+  {
+    "code": "ELM",
+    "city": "Elmira/Corning",
+    "state": "NY",
+    "country": "US"
+  },
+  {
+    "code": "ELP",
+    "city": "El Paso",
+    "state": "TX",
+    "country": "US"
+  },
+  {
+    "code": "ELY",
+    "city": "Ely",
+    "state": "NV",
+    "country": "US"
+  },
+  {
+    "code": "EMK",
+    "city": "Emmonak",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "ENA",
+    "city": "Kenai",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "END",
+    "city": "Enid",
+    "state": "OK",
+    "country": "US"
+  },
+  {
+    "code": "ENN",
+    "city": "Nenana",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "ENV",
+    "city": "Wendover",
+    "state": "UT",
+    "country": "US"
+  },
+  {
+    "code": "ENW",
+    "city": "Kenosha",
+    "state": "WI",
+    "country": "US"
+  },
+  {
+    "code": "ERI",
+    "city": "Erie",
+    "state": "PA",
+    "country": "US"
+  },
+  {
+    "code": "ESC",
+    "city": "Escanaba",
+    "state": "MI",
+    "country": "US"
+  },
+  {
+    "code": "ESD",
+    "city": "Eastsound",
+    "state": "WA",
+    "country": "US"
+  },
+  {
+    "code": "ESF",
+    "city": "Alexandria",
+    "state": "LA",
+    "country": "US"
+  },
+  {
+    "code": "EUG",
+    "city": "Eugene",
+    "state": "OR",
+    "country": "US"
+  },
+  {
+    "code": "EVV",
+    "city": "Evansville",
+    "state": "IN",
+    "country": "US"
+  },
+  {
+    "code": "EVW",
+    "city": "Evanston",
+    "state": "WY",
+    "country": "US"
+  },
+  {
+    "code": "EWB",
+    "city": "New Bedford",
+    "state": "MA",
+    "country": "US"
+  },
+  {
+    "code": "EWN",
+    "city": "New Bern",
+    "state": "NC",
+    "country": "US"
+  },
+  {
+    "code": "EWR",
+    "city": "Newark",
+    "state": "NJ",
+    "country": "US"
+  },
+  {
+    "code": "EYW",
+    "city": "Key West",
+    "state": "FL",
+    "country": "US"
+  },
+  {
+    "code": "FAF",
+    "city": "Newport News (Fort Eustis)",
+    "state": "VA",
+    "country": "US"
+  },
+  {
+    "code": "FAI",
+    "city": "Fairbanks",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "FAR",
+    "city": "Fargo",
+    "state": "ND",
+    "country": "US"
+  },
+  {
+    "code": "FAT",
+    "city": "Fresno",
+    "state": "CA",
+    "country": "US"
+  },
+  {
+    "code": "FAY",
+    "city": "Fayetteville",
+    "state": "NC",
+    "country": "US"
+  },
+  {
+    "code": "FBG",
+    "city": "Fort Bragg",
+    "state": "NC",
+    "country": "US"
+  },
+  {
+    "code": "FBK",
+    "city": "Fairbanks",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "FCA",
+    "city": "Kalispell",
+    "state": "MT",
+    "country": "US"
+  },
+  {
+    "code": "FCS",
+    "city": "Fort Carson",
+    "state": "CO",
+    "country": "US"
+  },
+  {
+    "code": "FDY",
+    "city": "Findlay",
+    "state": "OH",
+    "country": "US"
+  },
+  {
+    "code": "FFO",
+    "city": "Dayton",
+    "state": "OH",
+    "country": "US"
+  },
+  {
+    "code": "FHU",
+    "city": "Fort Huachuca / Sierra Vista",
+    "state": "AZ",
+    "country": "US"
+  },
+  {
+    "code": "FKL",
+    "city": "Franklin",
+    "state": "PA",
+    "country": "US"
+  },
+  {
+    "code": "FLG",
+    "city": "Flagstaff",
+    "state": "AZ",
+    "country": "US"
+  },
+  {
+    "code": "FLL",
+    "city": "Fort Lauderdale",
+    "state": "FL",
+    "country": "US"
+  },
+  {
+    "code": "FLO",
+    "city": "Florence",
+    "state": "SC",
+    "country": "US"
+  },
+  {
+    "code": "FME",
+    "city": "Fort Meade(Odenton)",
+    "state": "MD",
+    "country": "US"
+  },
+  {
+    "code": "FMN",
+    "city": "Farmington",
+    "state": "NM",
+    "country": "US"
+  },
+  {
+    "code": "FMY",
+    "city": "Fort Myers",
+    "state": "FL",
+    "country": "US"
+  },
+  {
+    "code": "FNL",
+    "city": "Loveland",
+    "state": "CO",
+    "country": "US"
+  },
+  {
+    "code": "FNT",
+    "city": "Flint",
+    "state": "MI",
+    "country": "US"
+  },
+  {
+    "code": "FOD",
+    "city": "Fort Dodge",
+    "state": "IA",
+    "country": "US"
+  },
+  {
+    "code": "FOE",
+    "city": "Topeka",
+    "state": "KS",
+    "country": "US"
+  },
+  {
+    "code": "FPR",
+    "city": "Fort Pierce",
+    "state": "FL",
+    "country": "US"
+  },
+  {
+    "code": "FRD",
+    "city": "Friday Harbor",
+    "state": "WA",
+    "country": "US"
+  },
+  {
+    "code": "FRG",
+    "city": "Farmingdale",
+    "state": "NY",
+    "country": "US"
+  },
+  {
+    "code": "FRI",
+    "city": "Fort Riley (Junction City)",
+    "state": "KS",
+    "country": "US"
+  },
+  {
+    "code": "FSD",
+    "city": "Sioux Falls",
+    "state": "SD",
+    "country": "US"
+  },
+  {
+    "code": "FSI",
+    "city": "Fort Sill",
+    "state": "OK",
+    "country": "US"
+  },
+  {
+    "code": "FSM",
+    "city": "Fort Smith",
+    "state": "AR",
+    "country": "US"
+  },
+  {
+    "code": "FST",
+    "city": "Fort Stockton",
+    "state": "TX",
+    "country": "US"
+  },
+  {
+    "code": "FTK",
+    "city": "Fort Knox",
+    "state": "KY",
+    "country": "US"
+  },
+  {
+    "code": "FTW",
+    "city": "Fort Worth",
+    "state": "TX",
+    "country": "US"
+  },
+  {
+    "code": "FTY",
+    "city": "Atlanta",
+    "state": "GA",
+    "country": "US"
+  },
+  {
+    "code": "FWA",
+    "city": "Fort Wayne",
+    "state": "IN",
+    "country": "US"
+  },
+  {
+    "code": "FWH",
+    "city": "Fort Worth",
+    "state": "TX",
+    "country": "US"
+  },
+  {
+    "code": "FXE",
+    "city": "Fort Lauderdale",
+    "state": "FL",
+    "country": "US"
+  },
+  {
+    "code": "FYU",
+    "city": "Fort Yukon",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "FYV",
+    "city": "Fayetteville",
+    "state": "AR",
+    "country": "US"
+  },
+  {
+    "code": "GAL",
+    "city": "Galena",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "GAM",
+    "city": "Gambell",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "GCC",
+    "city": "Gillette",
+    "state": "WY",
+    "country": "US"
+  },
+  {
+    "code": "GCK",
+    "city": "Garden City",
+    "state": "KS",
+    "country": "US"
+  },
+  {
+    "code": "GCN",
+    "city": "Grand Canyon - Tusayan",
+    "state": "AZ",
+    "country": "US"
+  },
+  {
+    "code": "GDV",
+    "city": "Glendive",
+    "state": "MT",
+    "country": "US"
+  },
+  {
+    "code": "GEG",
+    "city": "Spokane",
+    "state": "WA",
+    "country": "US"
+  },
+  {
+    "code": "GFK",
+    "city": "Grand Forks",
+    "state": "ND",
+    "country": "US"
+  },
+  {
+    "code": "GFL",
+    "city": "Glens Falls",
+    "state": "NY",
+    "country": "US"
+  },
+  {
+    "code": "GGG",
+    "city": "Longview",
+    "state": "TX",
+    "country": "US"
+  },
+  {
+    "code": "GGW",
+    "city": "Glasgow",
+    "state": "MT",
+    "country": "US"
+  },
+  {
+    "code": "GJT",
+    "city": "Grand Junction",
+    "state": "CO",
+    "country": "US"
+  },
+  {
+    "code": "GKN",
+    "city": "Gulkana",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "GLD",
+    "city": "Goodland",
+    "state": "KS",
+    "country": "US"
+  },
+  {
+    "code": "GLH",
+    "city": "Greenville",
+    "state": "MS",
+    "country": "US"
+  },
+  {
+    "code": "GLS",
+    "city": "Galveston",
+    "state": "TX",
+    "country": "US"
+  },
+  {
+    "code": "GMU",
+    "city": "Greenville",
+    "state": "SC",
+    "country": "US"
+  },
+  {
+    "code": "GNV",
+    "city": "Gainesville",
+    "state": "FL",
+    "country": "US"
+  },
+  {
+    "code": "GON",
+    "city": "Groton",
+    "state": "CT",
+    "country": "US"
+  },
+  {
+    "code": "GPT",
+    "city": "Gulfport",
+    "state": "MS",
+    "country": "US"
+  },
+  {
+    "code": "GRB",
+    "city": "Green Bay",
+    "state": "WI",
+    "country": "US"
+  },
+  {
+    "code": "GRF",
+    "city": "Fort Lewis/Tacoma",
+    "state": "WA",
+    "country": "US"
+  },
+  {
+    "code": "GRI",
+    "city": "Grand Island",
+    "state": "NE",
+    "country": "US"
+  },
+  {
+    "code": "GRK",
+    "city": "Fort Cavazos",
+    "state": "TX",
+    "country": "US"
+  },
+  {
+    "code": "GRR",
+    "city": "Grand Rapids",
+    "state": "MI",
+    "country": "US"
+  },
+  {
+    "code": "GSB",
+    "city": "Goldsboro",
+    "state": "NC",
+    "country": "US"
+  },
+  {
+    "code": "GSO",
+    "city": "Greensboro",
+    "state": "NC",
+    "country": "US"
+  },
+  {
+    "code": "GSP",
+    "city": "Greer",
+    "state": "SC",
+    "country": "US"
+  },
+  {
+    "code": "GST",
+    "city": "Gustavus",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "GTF",
+    "city": "Great Falls",
+    "state": "MT",
+    "country": "US"
+  },
+  {
+    "code": "GTR",
+    "city": "Columbus/W Point/Starkville",
+    "state": "MS",
+    "country": "US"
+  },
+  {
+    "code": "GUC",
+    "city": "Gunnison",
+    "state": "CO",
+    "country": "US"
+  },
+  {
+    "code": "GUP",
+    "city": "Gallup",
+    "state": "NM",
+    "country": "US"
+  },
+  {
+    "code": "GUS",
+    "city": "Peru",
+    "state": "IN",
+    "country": "US"
+  },
+  {
+    "code": "GUY",
+    "city": "Guymon",
+    "state": "OK",
+    "country": "US"
+  },
+  {
+    "code": "GWO",
+    "city": "Greenwood",
+    "state": "MS",
+    "country": "US"
+  },
+  {
+    "code": "GYY",
+    "city": "Gary",
+    "state": "IN",
+    "country": "US"
+  },
+  {
+    "code": "HBG",
+    "city": "Hattiesburg",
+    "state": "MS",
+    "country": "US"
+  },
+  {
+    "code": "HBR",
+    "city": "Hobart",
+    "state": "OK",
+    "country": "US"
+  },
+  {
+    "code": "HCR",
+    "city": "Holy Cross",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "HDN",
+    "city": "Hayden",
+    "state": "CO",
+    "country": "US"
+  },
+  {
+    "code": "HFD",
+    "city": "Hartford",
+    "state": "CT",
+    "country": "US"
+  },
+  {
+    "code": "HGR",
+    "city": "Hagerstown",
+    "state": "MD",
+    "country": "US"
+  },
+  {
+    "code": "HHH",
+    "city": "Hilton Head Island",
+    "state": "SC",
+    "country": "US"
+  },
+  {
+    "code": "HHR",
+    "city": "Hawthorne",
+    "state": "CA",
+    "country": "US"
+  },
+  {
+    "code": "HIB",
+    "city": "Hibbing",
+    "state": "MN",
+    "country": "US"
+  },
+  {
+    "code": "HIF",
+    "city": "Ogden",
+    "state": "UT",
+    "country": "US"
+  },
+  {
+    "code": "HII",
+    "city": "Lake Havasu City",
+    "state": "AZ",
+    "country": "US"
+  },
+  {
+    "code": "HIK",
+    "city": "Honolulu",
+    "state": "HI",
+    "country": "US"
+  },
+  {
+    "code": "HIO",
+    "city": "Portland",
+    "state": "OR",
+    "country": "US"
+  },
+  {
+    "code": "HKY",
+    "city": "Hickory",
+    "state": "NC",
+    "country": "US"
+  },
+  {
+    "code": "HLG",
+    "city": "Wheeling",
+    "state": "WV",
+    "country": "US"
+  },
+  {
+    "code": "HLN",
+    "city": "Helena",
+    "state": "MT",
+    "country": "US"
+  },
+  {
+    "code": "HMN",
+    "city": "Alamogordo",
+    "state": "NM",
+    "country": "US"
+  },
+  {
+    "code": "HNL",
+    "city": "Honolulu",
+    "state": "HI",
+    "country": "US"
+  },
+  {
+    "code": "HNM",
+    "city": "Hana",
+    "state": "HI",
+    "country": "US"
+  },
+  {
+    "code": "HNS",
+    "city": "Haines",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "HOB",
+    "city": "Hobbs",
+    "state": "NM",
+    "country": "US"
+  },
+  {
+    "code": "HOM",
+    "city": "Homer",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "HON",
+    "city": "Huron",
+    "state": "SD",
+    "country": "US"
+  },
+  {
+    "code": "HOP",
+    "city": "Fort Campbell",
+    "state": "KY",
+    "country": "US"
+  },
+  {
+    "code": "HOT",
+    "city": "Hot Springs",
+    "state": "AR",
+    "country": "US"
+  },
+  {
+    "code": "HOU",
+    "city": "Houston",
+    "state": "TX",
+    "country": "US"
+  },
+  {
+    "code": "HPN",
+    "city": "White Plains",
+    "state": "NY",
+    "country": "US"
+  },
+  {
+    "code": "HQM",
+    "city": "Hoquiam",
+    "state": "WA",
+    "country": "US"
+  },
+  {
+    "code": "HRL",
+    "city": "Harlingen",
+    "state": "TX",
+    "country": "US"
+  },
+  {
+    "code": "HRO",
+    "city": "Harrison",
+    "state": "AR",
+    "country": "US"
+  },
+  {
+    "code": "HSL",
+    "city": "Huslia",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "HST",
+    "city": "Homestead",
+    "state": "FL",
+    "country": "US"
+  },
+  {
+    "code": "HSV",
+    "city": "Huntsville",
+    "state": "AL",
+    "country": "US"
+  },
+  {
+    "code": "HTS",
+    "city": "Huntington",
+    "state": "WV",
+    "country": "US"
+  },
+  {
+    "code": "HTV",
+    "city": "Huntsville",
+    "state": "TX",
+    "country": "US"
+  },
+  {
+    "code": "HUA",
+    "city": "Redstone Arsnl Huntsville",
+    "state": "AL",
+    "country": "US"
+  },
+  {
+    "code": "HUF",
+    "city": "Terre Haute",
+    "state": "IN",
+    "country": "US"
+  },
+  {
+    "code": "HUL",
+    "city": "Houlton",
+    "state": "ME",
+    "country": "US"
+  },
+  {
+    "code": "HUT",
+    "city": "Hutchinson",
+    "state": "KS",
+    "country": "US"
+  },
+  {
+    "code": "HVN",
+    "city": "New Haven",
+    "state": "CT",
+    "country": "US"
+  },
+  {
+    "code": "HVR",
+    "city": "Havre",
+    "state": "MT",
+    "country": "US"
+  },
+  {
+    "code": "HYA",
+    "city": "Hyannis",
+    "state": "MA",
+    "country": "US"
+  },
+  {
+    "code": "HYR",
+    "city": "Hayward",
+    "state": "WI",
+    "country": "US"
+  },
+  {
+    "code": "HYS",
+    "city": "Hays",
+    "state": "KS",
+    "country": "US"
+  },
+  {
+    "code": "IAB",
+    "city": "Wichita",
+    "state": "KS",
+    "country": "US"
+  },
+  {
+    "code": "IAD",
+    "city": "Dulles",
+    "state": "VA",
+    "country": "US"
+  },
+  {
+    "code": "IAG",
+    "city": "Niagara Falls",
+    "state": "NY",
+    "country": "US"
+  },
+  {
+    "code": "IAH",
+    "city": "Houston",
+    "state": "TX",
+    "country": "US"
+  },
+  {
+    "code": "IAN",
+    "city": "Kiana",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "ICT",
+    "city": "Wichita",
+    "state": "KS",
+    "country": "US"
+  },
+  {
+    "code": "IDA",
+    "city": "Idaho Falls",
+    "state": "ID",
+    "country": "US"
+  },
+  {
+    "code": "IFP",
+    "city": "Bullhead City",
+    "state": "AZ",
+    "country": "US"
+  },
+  {
+    "code": "IGM",
+    "city": "Kingman",
+    "state": "AZ",
+    "country": "US"
+  },
+  {
+    "code": "IKK",
+    "city": "Kankakee",
+    "state": "IL",
+    "country": "US"
+  },
+  {
+    "code": "ILG",
+    "city": "Wilmington",
+    "state": "DE",
+    "country": "US"
+  },
+  {
+    "code": "ILI",
+    "city": "Iliamna",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "ILM",
+    "city": "Wilmington",
+    "state": "NC",
+    "country": "US"
+  },
+  {
+    "code": "ILN",
+    "city": "Wilmington",
+    "state": "OH",
+    "country": "US"
+  },
+  {
+    "code": "IMT",
+    "city": "Kingsford",
+    "state": "MI",
+    "country": "US"
+  },
+  {
+    "code": "IND",
+    "city": "Indianapolis",
+    "state": "IN",
+    "country": "US"
+  },
+  {
+    "code": "INK",
+    "city": "Wink",
+    "state": "TX",
+    "country": "US"
+  },
+  {
+    "code": "INL",
+    "city": "International Falls",
+    "state": "MN",
+    "country": "US"
+  },
+  {
+    "code": "INT",
+    "city": "Winston Salem",
+    "state": "NC",
+    "country": "US"
+  },
+  {
+    "code": "INW",
+    "city": "Winslow",
+    "state": "AZ",
+    "country": "US"
+  },
+  {
+    "code": "IPL",
+    "city": "Imperial",
+    "state": "CA",
+    "country": "US"
+  },
+  {
+    "code": "IPT",
+    "city": "Williamsport",
+    "state": "PA",
+    "country": "US"
+  },
+  {
+    "code": "IRK",
+    "city": "Kirksville",
+    "state": "MO",
+    "country": "US"
+  },
+  {
+    "code": "ISM",
+    "city": "Orlando",
+    "state": "FL",
+    "country": "US"
+  },
+  {
+    "code": "ISO",
+    "city": "Kinston",
+    "state": "NC",
+    "country": "US"
+  },
+  {
+    "code": "ISP",
+    "city": "Islip",
+    "state": "NY",
+    "country": "US"
+  },
+  {
+    "code": "ITH",
+    "city": "Ithaca",
+    "state": "NY",
+    "country": "US"
+  },
+  {
+    "code": "ITO",
+    "city": "Hilo",
+    "state": "HI",
+    "country": "US"
+  },
+  {
+    "code": "JAC",
+    "city": "Jackson",
+    "state": "WY",
+    "country": "US"
+  },
+  {
+    "code": "JAN",
+    "city": "Jackson",
+    "state": "MS",
+    "country": "US"
+  },
+  {
+    "code": "JAX",
+    "city": "Jacksonville",
+    "state": "FL",
+    "country": "US"
+  },
+  {
+    "code": "JBR",
+    "city": "Jonesboro",
+    "state": "AR",
+    "country": "US"
+  },
+  {
+    "code": "JCT",
+    "city": "Junction",
+    "state": "TX",
+    "country": "US"
+  },
+  {
+    "code": "JFK",
+    "city": "New York",
+    "state": "NY",
+    "country": "US"
+  },
+  {
+    "code": "JFN",
+    "city": "Ashtabula",
+    "state": "OH",
+    "country": "US"
+  },
+  {
+    "code": "JHM",
+    "city": "Lahaina",
+    "state": "HI",
+    "country": "US"
+  },
+  {
+    "code": "JHW",
+    "city": "Jamestown",
+    "state": "NY",
+    "country": "US"
+  },
+  {
+    "code": "JLN",
+    "city": "Joplin",
+    "state": "MO",
+    "country": "US"
+  },
+  {
+    "code": "JMS",
+    "city": "Jamestown",
+    "state": "ND",
+    "country": "US"
+  },
+  {
+    "code": "JNU",
+    "city": "Juneau",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "JRF",
+    "city": "Kapolei",
+    "state": "HI",
+    "country": "US"
+  },
+  {
+    "code": "JST",
+    "city": "Johnstown",
+    "state": "PA",
+    "country": "US"
+  },
+  {
+    "code": "JXN",
+    "city": "Jackson",
+    "state": "MI",
+    "country": "US"
+  },
+  {
+    "code": "KLS",
+    "city": "Kelso",
+    "state": "WA",
+    "country": "US"
+  },
+  {
+    "code": "KLW",
+    "city": "Klawock",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "KOA",
+    "city": "Kailua-Kona",
+    "state": "HI",
+    "country": "US"
+  },
+  {
+    "code": "KPC",
+    "city": "Port Clarence",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "KTN",
+    "city": "Ketchikan",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "LAA",
+    "city": "Lamar",
+    "state": "CO",
+    "country": "US"
+  },
+  {
+    "code": "LAF",
+    "city": "West Lafayette",
+    "state": "IN",
+    "country": "US"
+  },
+  {
+    "code": "LAL",
+    "city": "Lakeland",
+    "state": "FL",
+    "country": "US"
+  },
+  {
+    "code": "LAN",
+    "city": "Lansing",
+    "state": "MI",
+    "country": "US"
+  },
+  {
+    "code": "LAR",
+    "city": "Laramie",
+    "state": "WY",
+    "country": "US"
+  },
+  {
+    "code": "LAS",
+    "city": "Las Vegas",
+    "state": "NV",
+    "country": "US"
+  },
+  {
+    "code": "LAW",
+    "city": "Lawton",
+    "state": "OK",
+    "country": "US"
+  },
+  {
+    "code": "LAX",
+    "city": "Los Angeles",
+    "state": "CA",
+    "country": "US"
+  },
+  {
+    "code": "LBB",
+    "city": "Lubbock",
+    "state": "TX",
+    "country": "US"
+  },
+  {
+    "code": "LBE",
+    "city": "Latrobe",
+    "state": "PA",
+    "country": "US"
+  },
+  {
+    "code": "LBF",
+    "city": "North Platte",
+    "state": "NE",
+    "country": "US"
+  },
+  {
+    "code": "LBL",
+    "city": "Liberal",
+    "state": "KS",
+    "country": "US"
+  },
+  {
+    "code": "LBT",
+    "city": "Lumberton",
+    "state": "NC",
+    "country": "US"
+  },
+  {
+    "code": "LCH",
+    "city": "Lake Charles",
+    "state": "LA",
+    "country": "US"
+  },
+  {
+    "code": "LCK",
+    "city": "Columbus",
+    "state": "OH",
+    "country": "US"
+  },
+  {
+    "code": "LEB",
+    "city": "Lebanon",
+    "state": "NH",
+    "country": "US"
+  },
+  {
+    "code": "LEE",
+    "city": "Leesburg",
+    "state": "FL",
+    "country": "US"
+  },
+  {
+    "code": "LEX",
+    "city": "Lexington",
+    "state": "KY",
+    "country": "US"
+  },
+  {
+    "code": "LFI",
+    "city": "Hampton",
+    "state": "VA",
+    "country": "US"
+  },
+  {
+    "code": "LFK",
+    "city": "Lufkin",
+    "state": "TX",
+    "country": "US"
+  },
+  {
+    "code": "LFT",
+    "city": "Lafayette",
+    "state": "LA",
+    "country": "US"
+  },
+  {
+    "code": "LGA",
+    "city": "New York",
+    "state": "NY",
+    "country": "US"
+  },
+  {
+    "code": "LGB",
+    "city": "Long Beach",
+    "state": "CA",
+    "country": "US"
+  },
+  {
+    "code": "LGU",
+    "city": "Logan",
+    "state": "UT",
+    "country": "US"
+  },
+  {
+    "code": "LIH",
+    "city": "Lihue",
+    "state": "HI",
+    "country": "US"
+  },
+  {
+    "code": "LIT",
+    "city": "Little Rock",
+    "state": "AR",
+    "country": "US"
+  },
+  {
+    "code": "LJN",
+    "city": "Angleton",
+    "state": "TX",
+    "country": "US"
+  },
+  {
+    "code": "LMT",
+    "city": "Klamath Falls",
+    "state": "OR",
+    "country": "US"
+  },
+  {
+    "code": "LND",
+    "city": "Lander",
+    "state": "WY",
+    "country": "US"
+  },
+  {
+    "code": "LNK",
+    "city": "Lincoln",
+    "state": "NE",
+    "country": "US"
+  },
+  {
+    "code": "LNS",
+    "city": "Lancaster",
+    "state": "PA",
+    "country": "US"
+  },
+  {
+    "code": "LNY",
+    "city": "Lanai City",
+    "state": "HI",
+    "country": "US"
+  },
+  {
+    "code": "LOL",
+    "city": "Lovelock",
+    "state": "NV",
+    "country": "US"
+  },
+  {
+    "code": "LOU",
+    "city": "Louisville",
+    "state": "KY",
+    "country": "US"
+  },
+  {
+    "code": "LOZ",
+    "city": "London",
+    "state": "KY",
+    "country": "US"
+  },
+  {
+    "code": "LRD",
+    "city": "Laredo",
+    "state": "TX",
+    "country": "US"
+  },
+  {
+    "code": "LRF",
+    "city": "Jacksonville",
+    "state": "AR",
+    "country": "US"
+  },
+  {
+    "code": "LRU",
+    "city": "Las Cruces",
+    "state": "NM",
+    "country": "US"
+  },
+  {
+    "code": "LSE",
+    "city": "La Crosse",
+    "state": "WI",
+    "country": "US"
+  },
+  {
+    "code": "LSF",
+    "city": "Fort Benning",
+    "state": "GA",
+    "country": "US"
+  },
+  {
+    "code": "LSV",
+    "city": "Las Vegas",
+    "state": "NV",
+    "country": "US"
+  },
+  {
+    "code": "LTS",
+    "city": "Altus",
+    "state": "OK",
+    "country": "US"
+  },
+  {
+    "code": "LUF",
+    "city": "Glendale",
+    "state": "AZ",
+    "country": "US"
+  },
+  {
+    "code": "LUK",
+    "city": "Cincinnati",
+    "state": "OH",
+    "country": "US"
+  },
+  {
+    "code": "LUR",
+    "city": "Cape Lisburne",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "LVM",
+    "city": "Livingston",
+    "state": "MT",
+    "country": "US"
+  },
+  {
+    "code": "LVS",
+    "city": "Las Vegas",
+    "state": "NM",
+    "country": "US"
+  },
+  {
+    "code": "LWB",
+    "city": "Lewisburg",
+    "state": "WV",
+    "country": "US"
+  },
+  {
+    "code": "LWM",
+    "city": "Lawrence",
+    "state": "MA",
+    "country": "US"
+  },
+  {
+    "code": "LWS",
+    "city": "Lewiston",
+    "state": "ID",
+    "country": "US"
+  },
+  {
+    "code": "LWT",
+    "city": "Lewistown",
+    "state": "MT",
+    "country": "US"
+  },
+  {
+    "code": "LYH",
+    "city": "Lynchburg",
+    "state": "VA",
+    "country": "US"
+  },
+  {
+    "code": "LYU",
+    "city": "Ely",
+    "state": "MN",
+    "country": "US"
+  },
+  {
+    "code": "MAF",
+    "city": "Midland",
+    "state": "TX",
+    "country": "US"
+  },
+  {
+    "code": "MBG",
+    "city": "Mobridge",
+    "state": "SD",
+    "country": "US"
+  },
+  {
+    "code": "MBS",
+    "city": "Saginaw",
+    "state": "MI",
+    "country": "US"
+  },
+  {
+    "code": "MCB",
+    "city": "McComb",
+    "state": "MS",
+    "country": "US"
+  },
+  {
+    "code": "MCC",
+    "city": "Sacramento",
+    "state": "CA",
+    "country": "US"
+  },
+  {
+    "code": "MCE",
+    "city": "Merced",
+    "state": "CA",
+    "country": "US"
+  },
+  {
+    "code": "MCF",
+    "city": "Tampa",
+    "state": "FL",
+    "country": "US"
+  },
+  {
+    "code": "MCG",
+    "city": "McGrath",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "MCI",
+    "city": "Kansas City",
+    "state": "MO",
+    "country": "US"
+  },
+  {
+    "code": "MCK",
+    "city": "McCook",
+    "state": "NE",
+    "country": "US"
+  },
+  {
+    "code": "MCN",
+    "city": "Macon",
+    "state": "GA",
+    "country": "US"
+  },
+  {
+    "code": "MCO",
+    "city": "Orlando",
+    "state": "FL",
+    "country": "US"
+  },
+  {
+    "code": "MCW",
+    "city": "Mason City",
+    "state": "IA",
+    "country": "US"
+  },
+  {
+    "code": "MDH",
+    "city": "Murphysboro",
+    "state": "IL",
+    "country": "US"
+  },
+  {
+    "code": "MDT",
+    "city": "Harrisburg",
+    "state": "PA",
+    "country": "US"
+  },
+  {
+    "code": "MDW",
+    "city": "Chicago",
+    "state": "IL",
+    "country": "US"
+  },
+  {
+    "code": "MEI",
+    "city": "Meridian",
+    "state": "MS",
+    "country": "US"
+  },
+  {
+    "code": "MEM",
+    "city": "Memphis",
+    "state": "TN",
+    "country": "US"
+  },
+  {
+    "code": "MER",
+    "city": "Merced",
+    "state": "CA",
+    "country": "US"
+  },
+  {
+    "code": "MFD",
+    "city": "Mansfield",
+    "state": "OH",
+    "country": "US"
+  },
+  {
+    "code": "MFE",
+    "city": "McAllen",
+    "state": "TX",
+    "country": "US"
+  },
+  {
+    "code": "MFH",
+    "city": "Mesquite",
+    "state": "NV",
+    "country": "US"
+  },
+  {
+    "code": "MFR",
+    "city": "Medford",
+    "state": "OR",
+    "country": "US"
+  },
+  {
+    "code": "MGE",
+    "city": "Marietta",
+    "state": "GA",
+    "country": "US"
+  },
+  {
+    "code": "MGM",
+    "city": "Montgomery",
+    "state": "AL",
+    "country": "US"
+  },
+  {
+    "code": "MGW",
+    "city": "Morgantown",
+    "state": "WV",
+    "country": "US"
+  },
+  {
+    "code": "MHK",
+    "city": "Manhattan",
+    "state": "KS",
+    "country": "US"
+  },
+  {
+    "code": "MHR",
+    "city": "Sacramento",
+    "state": "CA",
+    "country": "US"
+  },
+  {
+    "code": "MHT",
+    "city": "Manchester",
+    "state": "NH",
+    "country": "US"
+  },
+  {
+    "code": "MIA",
+    "city": "Miami",
+    "state": "FL",
+    "country": "US"
+  },
+  {
+    "code": "MIB",
+    "city": "Minot",
+    "state": "ND",
+    "country": "US"
+  },
+  {
+    "code": "MIE",
+    "city": "Muncie",
+    "state": "IN",
+    "country": "US"
+  },
+  {
+    "code": "MIV",
+    "city": "Millville",
+    "state": "NJ",
+    "country": "US"
+  },
+  {
+    "code": "MKC",
+    "city": "Kansas City",
+    "state": "MO",
+    "country": "US"
+  },
+  {
+    "code": "MKE",
+    "city": "Milwaukee",
+    "state": "WI",
+    "country": "US"
+  },
+  {
+    "code": "MKG",
+    "city": "Muskegon",
+    "state": "MI",
+    "country": "US"
+  },
+  {
+    "code": "MKK",
+    "city": "Kaunakakai",
+    "state": "HI",
+    "country": "US"
+  },
+  {
+    "code": "MKL",
+    "city": "Jackson",
+    "state": "TN",
+    "country": "US"
+  },
+  {
+    "code": "MLB",
+    "city": "Melbourne",
+    "state": "FL",
+    "country": "US"
+  },
+  {
+    "code": "MLC",
+    "city": "Mc Alester",
+    "state": "OK",
+    "country": "US"
+  },
+  {
+    "code": "MLI",
+    "city": "Moline",
+    "state": "IL",
+    "country": "US"
+  },
+  {
+    "code": "MLS",
+    "city": "Miles City",
+    "state": "MT",
+    "country": "US"
+  },
+  {
+    "code": "MLU",
+    "city": "Monroe",
+    "state": "LA",
+    "country": "US"
+  },
+  {
+    "code": "MMT",
+    "city": "Eastover",
+    "state": "SC",
+    "country": "US"
+  },
+  {
+    "code": "MMU",
+    "city": "Morristown",
+    "state": "NJ",
+    "country": "US"
+  },
+  {
+    "code": "MOB",
+    "city": "Mobile",
+    "state": "AL",
+    "country": "US"
+  },
+  {
+    "code": "MOD",
+    "city": "Modesto",
+    "state": "CA",
+    "country": "US"
+  },
+  {
+    "code": "MOT",
+    "city": "Minot",
+    "state": "ND",
+    "country": "US"
+  },
+  {
+    "code": "MPV",
+    "city": "Barre/Montpelier",
+    "state": "VT",
+    "country": "US"
+  },
+  {
+    "code": "MQT",
+    "city": "Gwinn",
+    "state": "MI",
+    "country": "US"
+  },
+  {
+    "code": "MQY",
+    "city": "Smyrna",
+    "state": "TN",
+    "country": "US"
+  },
+  {
+    "code": "MRB",
+    "city": "Martinsburg",
+    "state": "WV",
+    "country": "US"
+  },
+  {
+    "code": "MRI",
+    "city": "Anchorage",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "MRY",
+    "city": "Monterey",
+    "state": "CA",
+    "country": "US"
+  },
+  {
+    "code": "MSL",
+    "city": "Muscle Shoals",
+    "state": "AL",
+    "country": "US"
+  },
+  {
+    "code": "MSN",
+    "city": "Madison",
+    "state": "WI",
+    "country": "US"
+  },
+  {
+    "code": "MSO",
+    "city": "Missoula",
+    "state": "MT",
+    "country": "US"
+  },
+  {
+    "code": "MSP",
+    "city": "Minneapolis",
+    "state": "MN",
+    "country": "US"
+  },
+  {
+    "code": "MSS",
+    "city": "Massena",
+    "state": "NY",
+    "country": "US"
+  },
+  {
+    "code": "MSY",
+    "city": "New Orleans",
+    "state": "LA",
+    "country": "US"
+  },
+  {
+    "code": "MTC",
+    "city": "Mount Clemens",
+    "state": "MI",
+    "country": "US"
+  },
+  {
+    "code": "MTH",
+    "city": "Marathon",
+    "state": "FL",
+    "country": "US"
+  },
+  {
+    "code": "MTJ",
+    "city": "Montrose",
+    "state": "CO",
+    "country": "US"
+  },
+  {
+    "code": "MTN",
+    "city": "Baltimore",
+    "state": "MD",
+    "country": "US"
+  },
+  {
+    "code": "MUE",
+    "city": "Waimea (Kamuela)",
+    "state": "HI",
+    "country": "US"
+  },
+  {
+    "code": "MUI",
+    "city": "Fort Indiantown Gap(Annville)",
+    "state": "PA",
+    "country": "US"
+  },
+  {
+    "code": "MUO",
+    "city": "Mountain Home",
+    "state": "ID",
+    "country": "US"
+  },
+  {
+    "code": "MWA",
+    "city": "Marion",
+    "state": "IL",
+    "country": "US"
+  },
+  {
+    "code": "MWH",
+    "city": "Moses Lake",
+    "state": "WA",
+    "country": "US"
+  },
+  {
+    "code": "MXF",
+    "city": "Montgomery",
+    "state": "AL",
+    "country": "US"
+  },
+  {
+    "code": "MYL",
+    "city": "McCall",
+    "state": "ID",
+    "country": "US"
+  },
+  {
+    "code": "MYR",
+    "city": "Myrtle Beach",
+    "state": "SC",
+    "country": "US"
+  },
+  {
+    "code": "MYU",
+    "city": "Mekoryuk",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "MYV",
+    "city": "Marysville",
+    "state": "CA",
+    "country": "US"
+  },
+  {
+    "code": "NBG",
+    "city": "New Orleans",
+    "state": "LA",
+    "country": "US"
+  },
+  {
+    "code": "NCO",
+    "city": "North Kingstown",
+    "state": "RI",
+    "country": "US"
+  },
+  {
+    "code": "NEL",
+    "city": "Lakehurst",
+    "state": "NJ",
+    "country": "US"
+  },
+  {
+    "code": "NEW",
+    "city": "New Orleans",
+    "state": "LA",
+    "country": "US"
+  },
+  {
+    "code": "NFL",
+    "city": "Fallon",
+    "state": "NV",
+    "country": "US"
+  },
+  {
+    "code": "NGF",
+    "city": "Kaneohe",
+    "state": "HI",
+    "country": "US"
+  },
+  {
+    "code": "NGP",
+    "city": "Corpus Christi",
+    "state": "TX",
+    "country": "US"
+  },
+  {
+    "code": "NGU",
+    "city": "Norfolk",
+    "state": "VA",
+    "country": "US"
+  },
+  {
+    "code": "NHK",
+    "city": "Patuxent River",
+    "state": "MD",
+    "country": "US"
+  },
+  {
+    "code": "NHZ",
+    "city": "Brunswick",
+    "state": "ME",
+    "country": "US"
+  },
+  {
+    "code": "NIP",
+    "city": "Jacksonville",
+    "state": "FL",
+    "country": "US"
+  },
+  {
+    "code": "NJK",
+    "city": "El Centro",
+    "state": "CA",
+    "country": "US"
+  },
+  {
+    "code": "NKX",
+    "city": "San Diego",
+    "state": "CA",
+    "country": "US"
+  },
+  {
+    "code": "NLC",
+    "city": "Lemoore",
+    "state": "CA",
+    "country": "US"
+  },
+  {
+    "code": "NPA",
+    "city": "Pensacola",
+    "state": "FL",
+    "country": "US"
+  },
+  {
+    "code": "NQA",
+    "city": "Millington",
+    "state": "TN",
+    "country": "US"
+  },
+  {
+    "code": "NQI",
+    "city": "Kingsville",
+    "state": "TX",
+    "country": "US"
+  },
+  {
+    "code": "NQX",
+    "city": "Key West",
+    "state": "FL",
+    "country": "US"
+  },
+  {
+    "code": "NRB",
+    "city": "Jacksonville",
+    "state": "FL",
+    "country": "US"
+  },
+  {
+    "code": "NSE",
+    "city": "Milton",
+    "state": "FL",
+    "country": "US"
+  },
+  {
+    "code": "NTD",
+    "city": "Point Mugu",
+    "state": "CA",
+    "country": "US"
+  },
+  {
+    "code": "NTU",
+    "city": "Virginia Beach",
+    "state": "VA",
+    "country": "US"
+  },
+  {
+    "code": "NUI",
+    "city": "Nuiqsut",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "NUQ",
+    "city": "Mountain View",
+    "state": "CA",
+    "country": "US"
+  },
+  {
+    "code": "NUW",
+    "city": "Oak Harbor",
+    "state": "WA",
+    "country": "US"
+  },
+  {
+    "code": "NYG",
+    "city": "Quantico",
+    "state": "VA",
+    "country": "US"
+  },
+  {
+    "code": "NZY",
+    "city": "San Diego",
+    "state": "CA",
+    "country": "US"
+  },
+  {
+    "code": "OAJ",
+    "city": "Richlands",
+    "state": "NC",
+    "country": "US"
+  },
+  {
+    "code": "OAK",
+    "city": "Oakland",
+    "state": "CA",
+    "country": "US"
+  },
+  {
+    "code": "OFF",
+    "city": "Omaha",
+    "state": "NE",
+    "country": "US"
+  },
+  {
+    "code": "OFK",
+    "city": "Norfolk",
+    "state": "NE",
+    "country": "US"
+  },
+  {
+    "code": "OGB",
+    "city": "Orangeburg",
+    "state": "SC",
+    "country": "US"
+  },
+  {
+    "code": "OGD",
+    "city": "Ogden",
+    "state": "UT",
+    "country": "US"
+  },
+  {
+    "code": "OGG",
+    "city": "Kahului",
+    "state": "HI",
+    "country": "US"
+  },
+  {
+    "code": "OGS",
+    "city": "Ogdensburg",
+    "state": "NY",
+    "country": "US"
+  },
+  {
+    "code": "OKC",
+    "city": "Oklahoma City",
+    "state": "OK",
+    "country": "US"
+  },
+  {
+    "code": "OLF",
+    "city": "Wolf Point",
+    "state": "MT",
+    "country": "US"
+  },
+  {
+    "code": "OLM",
+    "city": "Olympia",
+    "state": "WA",
+    "country": "US"
+  },
+  {
+    "code": "OLS",
+    "city": "Nogales",
+    "state": "AZ",
+    "country": "US"
+  },
+  {
+    "code": "OLU",
+    "city": "Columbus",
+    "state": "NE",
+    "country": "US"
+  },
+  {
+    "code": "OMA",
+    "city": "Omaha",
+    "state": "NE",
+    "country": "US"
+  },
+  {
+    "code": "OME",
+    "city": "Nome",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "ONO",
+    "city": "Oregon",
+    "state": "OR",
+    "country": "US"
+  },
+  {
+    "code": "ONP",
+    "city": "Newport",
+    "state": "OR",
+    "country": "US"
+  },
+  {
+    "code": "ONT",
+    "city": "Ontario",
+    "state": "CA",
+    "country": "US"
+  },
+  {
+    "code": "OPF",
+    "city": "Miami",
+    "state": "FL",
+    "country": "US"
+  },
+  {
+    "code": "ORD",
+    "city": "Chicago",
+    "state": "IL",
+    "country": "US"
+  },
+  {
+    "code": "ORF",
+    "city": "Norfolk",
+    "state": "VA",
+    "country": "US"
+  },
+  {
+    "code": "ORH",
+    "city": "Worcester",
+    "state": "MA",
+    "country": "US"
+  },
+  {
+    "code": "ORT",
+    "city": "Northway",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "OSH",
+    "city": "Oshkosh",
+    "state": "WI",
+    "country": "US"
+  },
+  {
+    "code": "OSU",
+    "city": "Columbus",
+    "state": "OH",
+    "country": "US"
+  },
+  {
+    "code": "OTH",
+    "city": "North Bend",
+    "state": "OR",
+    "country": "US"
+  },
+  {
+    "code": "OTM",
+    "city": "Ottumwa",
+    "state": "IA",
+    "country": "US"
+  },
+  {
+    "code": "OTZ",
+    "city": "Kotzebue",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "OWB",
+    "city": "Owensboro",
+    "state": "KY",
+    "country": "US"
+  },
+  {
+    "code": "OWD",
+    "city": "Norwood",
+    "state": "MA",
+    "country": "US"
+  },
+  {
+    "code": "OXR",
+    "city": "Oxnard",
+    "state": "CA",
+    "country": "US"
+  },
+  {
+    "code": "OZR",
+    "city": "Fort Rucker/Ozark",
+    "state": "AL",
+    "country": "US"
+  },
+  {
+    "code": "PAE",
+    "city": "Everett",
+    "state": "WA",
+    "country": "US"
+  },
+  {
+    "code": "PAH",
+    "city": "Paducah",
+    "state": "KY",
+    "country": "US"
+  },
+  {
+    "code": "PAM",
+    "city": "Panama City",
+    "state": "FL",
+    "country": "US"
+  },
+  {
+    "code": "PAQ",
+    "city": "Palmer",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "PBF",
+    "city": "Pine Bluff",
+    "state": "AR",
+    "country": "US"
+  },
+  {
+    "code": "PBG",
+    "city": "Plattsburgh",
+    "state": "NY",
+    "country": "US"
+  },
+  {
+    "code": "PBI",
+    "city": "West Palm Beach",
+    "state": "FL",
+    "country": "US"
+  },
+  {
+    "code": "PDK",
+    "city": "Atlanta",
+    "state": "GA",
+    "country": "US"
+  },
+  {
+    "code": "PDT",
+    "city": "Pendleton",
+    "state": "OR",
+    "country": "US"
+  },
+  {
+    "code": "PDX",
+    "city": "Portland",
+    "state": "OR",
+    "country": "US"
+  },
+  {
+    "code": "PGA",
+    "city": "Page",
+    "state": "AZ",
+    "country": "US"
+  },
+  {
+    "code": "PGD",
+    "city": "Punta Gorda",
+    "state": "FL",
+    "country": "US"
+  },
+  {
+    "code": "PGV",
+    "city": "Greenville",
+    "state": "NC",
+    "country": "US"
+  },
+  {
+    "code": "PHF",
+    "city": "Newport News",
+    "state": "VA",
+    "country": "US"
+  },
+  {
+    "code": "PHL",
+    "city": "Philadelphia",
+    "state": "PA",
+    "country": "US"
+  },
+  {
+    "code": "PHX",
+    "city": "Phoenix",
+    "state": "AZ",
+    "country": "US"
+  },
+  {
+    "code": "PIA",
+    "city": "Peoria",
+    "state": "IL",
+    "country": "US"
+  },
+  {
+    "code": "PIB",
+    "city": "Moselle",
+    "state": "MS",
+    "country": "US"
+  },
+  {
+    "code": "PIE",
+    "city": "Pinellas Park",
+    "state": "FL",
+    "country": "US"
+  },
+  {
+    "code": "PIH",
+    "city": "Pocatello",
+    "state": "ID",
+    "country": "US"
+  },
+  {
+    "code": "PIR",
+    "city": "Pierre",
+    "state": "SD",
+    "country": "US"
+  },
+  {
+    "code": "PIT",
+    "city": "Pittsburgh",
+    "state": "PA",
+    "country": "US"
+  },
+  {
+    "code": "PIZ",
+    "city": "Point Lay",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "PKB",
+    "city": "Parkersburg (Williamstown)",
+    "state": "WV",
+    "country": "US"
+  },
+  {
+    "code": "PLN",
+    "city": "Pellston",
+    "state": "MI",
+    "country": "US"
+  },
+  {
+    "code": "PMD",
+    "city": "Palmdale",
+    "state": "CA",
+    "country": "US"
+  },
+  {
+    "code": "PNC",
+    "city": "Ponca City",
+    "state": "OK",
+    "country": "US"
+  },
+  {
+    "code": "PNE",
+    "city": "Philadelphia",
+    "state": "PA",
+    "country": "US"
+  },
+  {
+    "code": "PNS",
+    "city": "Pensacola",
+    "state": "FL",
+    "country": "US"
+  },
+  {
+    "code": "PNX",
+    "city": "Denison",
+    "state": "TX",
+    "country": "US"
+  },
+  {
+    "code": "POB",
+    "city": "Fort Bragg",
+    "state": "NC",
+    "country": "US"
+  },
+  {
+    "code": "POE",
+    "city": "Fort Polk",
+    "state": "LA",
+    "country": "US"
+  },
+  {
+    "code": "POU",
+    "city": "Poughkeepsie",
+    "state": "NY",
+    "country": "US"
+  },
+  {
+    "code": "PQI",
+    "city": "Presque Isle",
+    "state": "ME",
+    "country": "US"
+  },
+  {
+    "code": "PRB",
+    "city": "Paso Robles",
+    "state": "CA",
+    "country": "US"
+  },
+  {
+    "code": "PRC",
+    "city": "Prescott",
+    "state": "AZ",
+    "country": "US"
+  },
+  {
+    "code": "PRX",
+    "city": "Paris",
+    "state": "TX",
+    "country": "US"
+  },
+  {
+    "code": "PSC",
+    "city": "Pasco",
+    "state": "WA",
+    "country": "US"
+  },
+  {
+    "code": "PSG",
+    "city": "Petersburg",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "PSM",
+    "city": "Portsmouth",
+    "state": "NH",
+    "country": "US"
+  },
+  {
+    "code": "PSP",
+    "city": "Palm Springs",
+    "state": "CA",
+    "country": "US"
+  },
+  {
+    "code": "PTH",
+    "city": "Port Heiden",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "PTK",
+    "city": "Pontiac",
+    "state": "MI",
+    "country": "US"
+  },
+  {
+    "code": "PTU",
+    "city": "Platinum",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "PUB",
+    "city": "Pueblo",
+    "state": "CO",
+    "country": "US"
+  },
+  {
+    "code": "PUW",
+    "city": "Pullman",
+    "state": "WA",
+    "country": "US"
+  },
+  {
+    "code": "PVD",
+    "city": "Warwick",
+    "state": "RI",
+    "country": "US"
+  },
+  {
+    "code": "PVU",
+    "city": "Provo",
+    "state": "UT",
+    "country": "US"
+  },
+  {
+    "code": "PWK",
+    "city": "Chicago/Prospect Heights/Wheeling",
+    "state": "IL",
+    "country": "US"
+  },
+  {
+    "code": "PWM",
+    "city": "Portland",
+    "state": "ME",
+    "country": "US"
+  },
+  {
+    "code": "PWT",
+    "city": "Bremerton",
+    "state": "WA",
+    "country": "US"
+  },
+  {
+    "code": "PWY",
+    "city": "Pinedale",
+    "state": "WY",
+    "country": "US"
+  },
+  {
+    "code": "RAL",
+    "city": "Riverside",
+    "state": "CA",
+    "country": "US"
+  },
+  {
+    "code": "RAP",
+    "city": "Rapid City",
+    "state": "SD",
+    "country": "US"
+  },
+  {
+    "code": "RBL",
+    "city": "Red Bluff",
+    "state": "CA",
+    "country": "US"
+  },
+  {
+    "code": "RBY",
+    "city": "Ruby",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "RCA",
+    "city": "Rapid City",
+    "state": "SD",
+    "country": "US"
+  },
+  {
+    "code": "RDD",
+    "city": "Redding",
+    "state": "CA",
+    "country": "US"
+  },
+  {
+    "code": "RDG",
+    "city": "Reading",
+    "state": "PA",
+    "country": "US"
+  },
+  {
+    "code": "RDM",
+    "city": "Redmond",
+    "state": "OR",
+    "country": "US"
+  },
+  {
+    "code": "RDR",
+    "city": "Grand Forks",
+    "state": "ND",
+    "country": "US"
+  },
+  {
+    "code": "RDU",
+    "city": "Raleigh/Durham",
+    "state": "NC",
+    "country": "US"
+  },
+  {
+    "code": "RFD",
+    "city": "Chicago/Rockford",
+    "state": "IL",
+    "country": "US"
+  },
+  {
+    "code": "RHI",
+    "city": "Rhinelander",
+    "state": "WI",
+    "country": "US"
+  },
+  {
+    "code": "RIC",
+    "city": "Richmond",
+    "state": "VA",
+    "country": "US"
+  },
+  {
+    "code": "RIL",
+    "city": "Rifle",
+    "state": "CO",
+    "country": "US"
+  },
+  {
+    "code": "RIV",
+    "city": "Riverside",
+    "state": "CA",
+    "country": "US"
+  },
+  {
+    "code": "RIW",
+    "city": "Riverton",
+    "state": "WY",
+    "country": "US"
+  },
+  {
+    "code": "RKD",
+    "city": "Rockland",
+    "state": "ME",
+    "country": "US"
+  },
+  {
+    "code": "RKS",
+    "city": "Rock Springs",
+    "state": "WY",
+    "country": "US"
+  },
+  {
+    "code": "RME",
+    "city": "Rome",
+    "state": "NY",
+    "country": "US"
+  },
+  {
+    "code": "RMG",
+    "city": "Rome",
+    "state": "GA",
+    "country": "US"
+  },
+  {
+    "code": "RND",
+    "city": "Universal City",
+    "state": "TX",
+    "country": "US"
+  },
+  {
+    "code": "RNH",
+    "city": "New Richmond",
+    "state": "WI",
+    "country": "US"
+  },
+  {
+    "code": "RNO",
+    "city": "Reno",
+    "state": "NV",
+    "country": "US"
+  },
+  {
+    "code": "ROA",
+    "city": "Roanoke",
+    "state": "VA",
+    "country": "US"
+  },
+  {
+    "code": "ROC",
+    "city": "Rochester",
+    "state": "NY",
+    "country": "US"
+  },
+  {
+    "code": "ROW",
+    "city": "Roswell",
+    "state": "NM",
+    "country": "US"
+  },
+  {
+    "code": "RSL",
+    "city": "Russell",
+    "state": "KS",
+    "country": "US"
+  },
+  {
+    "code": "RST",
+    "city": "Rochester",
+    "state": "MN",
+    "country": "US"
+  },
+  {
+    "code": "RSW",
+    "city": "Fort Myers",
+    "state": "FL",
+    "country": "US"
+  },
+  {
+    "code": "RUI",
+    "city": "Alto",
+    "state": "NM",
+    "country": "US"
+  },
+  {
+    "code": "RUT",
+    "city": "Rutland",
+    "state": "VT",
+    "country": "US"
+  },
+  {
+    "code": "RVS",
+    "city": "Tulsa",
+    "state": "OK",
+    "country": "US"
+  },
+  {
+    "code": "RWF",
+    "city": "Redwood Falls",
+    "state": "MN",
+    "country": "US"
+  },
+  {
+    "code": "RWI",
+    "city": "Rocky Mount",
+    "state": "NC",
+    "country": "US"
+  },
+  {
+    "code": "RWL",
+    "city": "Rawlins",
+    "state": "WY",
+    "country": "US"
+  },
+  {
+    "code": "SAC",
+    "city": "Sacramento",
+    "state": "CA",
+    "country": "US"
+  },
+  {
+    "code": "SAF",
+    "city": "Santa Fe",
+    "state": "NM",
+    "country": "US"
+  },
+  {
+    "code": "SAN",
+    "city": "San Diego",
+    "state": "CA",
+    "country": "US"
+  },
+  {
+    "code": "SAT",
+    "city": "San Antonio",
+    "state": "TX",
+    "country": "US"
+  },
+  {
+    "code": "SAV",
+    "city": "Savannah",
+    "state": "GA",
+    "country": "US"
+  },
+  {
+    "code": "SBA",
+    "city": "Santa Barbara",
+    "state": "CA",
+    "country": "US"
+  },
+  {
+    "code": "SBD",
+    "city": "San Bernardino",
+    "state": "CA",
+    "country": "US"
+  },
+  {
+    "code": "SBN",
+    "city": "South Bend",
+    "state": "IN",
+    "country": "US"
+  },
+  {
+    "code": "SBP",
+    "city": "San Luis Obispo",
+    "state": "CA",
+    "country": "US"
+  },
+  {
+    "code": "SBY",
+    "city": "Salisbury",
+    "state": "MD",
+    "country": "US"
+  },
+  {
+    "code": "SCC",
+    "city": "Deadhorse",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "SCE",
+    "city": "State College",
+    "state": "PA",
+    "country": "US"
+  },
+  {
+    "code": "SCH",
+    "city": "Schenectady",
+    "state": "NY",
+    "country": "US"
+  },
+  {
+    "code": "SCK",
+    "city": "Stockton",
+    "state": "CA",
+    "country": "US"
+  },
+  {
+    "code": "SDF",
+    "city": "Louisville",
+    "state": "KY",
+    "country": "US"
+  },
+  {
+    "code": "SDM",
+    "city": "San Diego",
+    "state": "CA",
+    "country": "US"
+  },
+  {
+    "code": "SDP",
+    "city": "Sand Point",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "SDY",
+    "city": "Sidney",
+    "state": "MT",
+    "country": "US"
+  },
+  {
+    "code": "SEA",
+    "city": "Seattle",
+    "state": "WA",
+    "country": "US"
+  },
+  {
+    "code": "SFB",
+    "city": "Orlando",
+    "state": "FL",
+    "country": "US"
+  },
+  {
+    "code": "SFF",
+    "city": "Spokane",
+    "state": "WA",
+    "country": "US"
+  },
+  {
+    "code": "SFO",
+    "city": "San Francisco",
+    "state": "CA",
+    "country": "US"
+  },
+  {
+    "code": "SGF",
+    "city": "Springfield",
+    "state": "MO",
+    "country": "US"
+  },
+  {
+    "code": "SGH",
+    "city": "Springfield",
+    "state": "OH",
+    "country": "US"
+  },
+  {
+    "code": "SGR",
+    "city": "Houston",
+    "state": "TX",
+    "country": "US"
+  },
+  {
+    "code": "SGU",
+    "city": "St George",
+    "state": "UT",
+    "country": "US"
+  },
+  {
+    "code": "SHD",
+    "city": "Weyers Cave",
+    "state": "VA",
+    "country": "US"
+  },
+  {
+    "code": "SHR",
+    "city": "Sheridan",
+    "state": "WY",
+    "country": "US"
+  },
+  {
+    "code": "SHV",
+    "city": "Shreveport",
+    "state": "LA",
+    "country": "US"
+  },
+  {
+    "code": "SIT",
+    "city": "Sitka",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "SJC",
+    "city": "San Jose",
+    "state": "CA",
+    "country": "US"
+  },
+  {
+    "code": "SJT",
+    "city": "San Angelo",
+    "state": "TX",
+    "country": "US"
+  },
+  {
+    "code": "SKA",
+    "city": "Spokane",
+    "state": "WA",
+    "country": "US"
+  },
+  {
+    "code": "SKF",
+    "city": "San Antonio",
+    "state": "TX",
+    "country": "US"
+  },
+  {
+    "code": "SLC",
+    "city": "Salt Lake City",
+    "state": "UT",
+    "country": "US"
+  },
+  {
+    "code": "SLE",
+    "city": "Salem",
+    "state": "OR",
+    "country": "US"
+  },
+  {
+    "code": "SLK",
+    "city": "Saranac Lake",
+    "state": "NY",
+    "country": "US"
+  },
+  {
+    "code": "SLN",
+    "city": "Salina",
+    "state": "KS",
+    "country": "US"
+  },
+  {
+    "code": "SME",
+    "city": "Somerset",
+    "state": "KY",
+    "country": "US"
+  },
+  {
+    "code": "SMF",
+    "city": "Sacramento",
+    "state": "CA",
+    "country": "US"
+  },
+  {
+    "code": "SMN",
+    "city": "Salmon",
+    "state": "ID",
+    "country": "US"
+  },
+  {
+    "code": "SMO",
+    "city": "Santa Monica",
+    "state": "CA",
+    "country": "US"
+  },
+  {
+    "code": "SMX",
+    "city": "Santa Maria",
+    "state": "CA",
+    "country": "US"
+  },
+  {
+    "code": "SNA",
+    "city": "Santa Ana",
+    "state": "CA",
+    "country": "US"
+  },
+  {
+    "code": "SNP",
+    "city": "St Paul Island",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "SNS",
+    "city": "Salinas",
+    "state": "CA",
+    "country": "US"
+  },
+  {
+    "code": "SNY",
+    "city": "Sidney",
+    "state": "NE",
+    "country": "US"
+  },
+  {
+    "code": "SOW",
+    "city": "Show Low",
+    "state": "AZ",
+    "country": "US"
+  },
+  {
+    "code": "SPI",
+    "city": "Springfield",
+    "state": "IL",
+    "country": "US"
+  },
+  {
+    "code": "SPS",
+    "city": "Wichita Falls",
+    "state": "TX",
+    "country": "US"
+  },
+  {
+    "code": "SQL",
+    "city": "San Carlos",
+    "state": "CA",
+    "country": "US"
+  },
+  {
+    "code": "SRQ",
+    "city": "Sarasota/Bradenton",
+    "state": "FL",
+    "country": "US"
+  },
+  {
+    "code": "SSC",
+    "city": "Sumter",
+    "state": "SC",
+    "country": "US"
+  },
+  {
+    "code": "SSF",
+    "city": "San Antonio",
+    "state": "TX",
+    "country": "US"
+  },
+  {
+    "code": "SSI",
+    "city": "St Simons Island",
+    "state": "GA",
+    "country": "US"
+  },
+  {
+    "code": "STC",
+    "city": "Saint Cloud",
+    "state": "MN",
+    "country": "US"
+  },
+  {
+    "code": "STG",
+    "city": "St George",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "STJ",
+    "city": "St Joseph",
+    "state": "MO",
+    "country": "US"
+  },
+  {
+    "code": "STL",
+    "city": "St Louis",
+    "state": "MO",
+    "country": "US"
+  },
+  {
+    "code": "STP",
+    "city": "Saint Paul",
+    "state": "MN",
+    "country": "US"
+  },
+  {
+    "code": "STS",
+    "city": "Santa Rosa",
+    "state": "CA",
+    "country": "US"
+  },
+  {
+    "code": "SUN",
+    "city": "Hailey",
+    "state": "ID",
+    "country": "US"
+  },
+  {
+    "code": "SUS",
+    "city": "St Louis",
+    "state": "MO",
+    "country": "US"
+  },
+  {
+    "code": "SUU",
+    "city": "Fairfield",
+    "state": "CA",
+    "country": "US"
+  },
+  {
+    "code": "SUX",
+    "city": "Sioux City",
+    "state": "IA",
+    "country": "US"
+  },
+  {
+    "code": "SVA",
+    "city": "Savoonga",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "SVC",
+    "city": "Silver City",
+    "state": "NM",
+    "country": "US"
+  },
+  {
+    "code": "SVN",
+    "city": "Savannah",
+    "state": "GA",
+    "country": "US"
+  },
+  {
+    "code": "SVW",
+    "city": "Sparrevohn",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "SWD",
+    "city": "Seward",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "SWF",
+    "city": "Newburgh",
+    "state": "NY",
+    "country": "US"
+  },
+  {
+    "code": "SWO",
+    "city": "Stillwater",
+    "state": "OK",
+    "country": "US"
+  },
+  {
+    "code": "SXQ",
+    "city": "Soldotna",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "SYA",
+    "city": "Shemya",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "SYR",
+    "city": "Syracuse",
+    "state": "NY",
+    "country": "US"
+  },
+  {
+    "code": "SZL",
+    "city": "Knob Noster",
+    "state": "MO",
+    "country": "US"
+  },
+  {
+    "code": "TBN",
+    "city": "Fort Leonard Wood",
+    "state": "MO",
+    "country": "US"
+  },
+  {
+    "code": "TCC",
+    "city": "Tucumcari",
+    "state": "NM",
+    "country": "US"
+  },
+  {
+    "code": "TCL",
+    "city": "Tuscaloosa",
+    "state": "AL",
+    "country": "US"
+  },
+  {
+    "code": "TCM",
+    "city": "Tacoma",
+    "state": "WA",
+    "country": "US"
+  },
+  {
+    "code": "TCS",
+    "city": "Truth or Consequences",
+    "state": "NM",
+    "country": "US"
+  },
+  {
+    "code": "TEB",
+    "city": "Teterboro",
+    "state": "NJ",
+    "country": "US"
+  },
+  {
+    "code": "TEX",
+    "city": "Telluride",
+    "state": "CO",
+    "country": "US"
+  },
+  {
+    "code": "TIK",
+    "city": "Oklahoma City",
+    "state": "OK",
+    "country": "US"
+  },
+  {
+    "code": "TIW",
+    "city": "Tacoma",
+    "state": "WA",
+    "country": "US"
+  },
+  {
+    "code": "TIX",
+    "city": "Titusville",
+    "state": "FL",
+    "country": "US"
+  },
+  {
+    "code": "TKA",
+    "city": "Talkeetna",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "TKF",
+    "city": "Truckee",
+    "state": "CA",
+    "country": "US"
+  },
+  {
+    "code": "TLH",
+    "city": "Tallahassee",
+    "state": "FL",
+    "country": "US"
+  },
+  {
+    "code": "TLJ",
+    "city": "Takotna",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "TMB",
+    "city": "Miami",
+    "state": "FL",
+    "country": "US"
+  },
+  {
+    "code": "TOI",
+    "city": "Troy",
+    "state": "AL",
+    "country": "US"
+  },
+  {
+    "code": "TOL",
+    "city": "Toledo",
+    "state": "OH",
+    "country": "US"
+  },
+  {
+    "code": "TOP",
+    "city": "Topeka",
+    "state": "KS",
+    "country": "US"
+  },
+  {
+    "code": "TPA",
+    "city": "Tampa",
+    "state": "FL",
+    "country": "US"
+  },
+  {
+    "code": "TPH",
+    "city": "Tonopah",
+    "state": "NV",
+    "country": "US"
+  },
+  {
+    "code": "TPL",
+    "city": "Temple",
+    "state": "TX",
+    "country": "US"
+  },
+  {
+    "code": "TRI",
+    "city": "Blountville",
+    "state": "TN",
+    "country": "US"
+  },
+  {
+    "code": "TRM",
+    "city": "Palm Springs",
+    "state": "CA",
+    "country": "US"
+  },
+  {
+    "code": "TSM",
+    "city": "Taos",
+    "state": "NM",
+    "country": "US"
+  },
+  {
+    "code": "TTD",
+    "city": "Portland",
+    "state": "OR",
+    "country": "US"
+  },
+  {
+    "code": "TTN",
+    "city": "Ewing Township",
+    "state": "NJ",
+    "country": "US"
+  },
+  {
+    "code": "TUL",
+    "city": "Tulsa",
+    "state": "OK",
+    "country": "US"
+  },
+  {
+    "code": "TUP",
+    "city": "Tupelo",
+    "state": "MS",
+    "country": "US"
+  },
+  {
+    "code": "TUS",
+    "city": "Tucson",
+    "state": "AZ",
+    "country": "US"
+  },
+  {
+    "code": "TVC",
+    "city": "Traverse City",
+    "state": "MI",
+    "country": "US"
+  },
+  {
+    "code": "TVF",
+    "city": "Thief River Falls",
+    "state": "MN",
+    "country": "US"
+  },
+  {
+    "code": "TVL",
+    "city": "South Lake Tahoe",
+    "state": "CA",
+    "country": "US"
+  },
+  {
+    "code": "TWF",
+    "city": "Twin Falls",
+    "state": "ID",
+    "country": "US"
+  },
+  {
+    "code": "TXK",
+    "city": "Texarkana",
+    "state": "AR",
+    "country": "US"
+  },
+  {
+    "code": "TYR",
+    "city": "Tyler",
+    "state": "TX",
+    "country": "US"
+  },
+  {
+    "code": "TYS",
+    "city": "Alcoa",
+    "state": "TN",
+    "country": "US"
+  },
+  {
+    "code": "UIN",
+    "city": "Quincy",
+    "state": "IL",
+    "country": "US"
+  },
+  {
+    "code": "UKI",
+    "city": "Ukiah",
+    "state": "CA",
+    "country": "US"
+  },
+  {
+    "code": "UNK",
+    "city": "Unalakleet",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "UOX",
+    "city": "Oxford",
+    "state": "MS",
+    "country": "US"
+  },
+  {
+    "code": "USA",
+    "city": "Concord",
+    "state": "NC",
+    "country": "US"
+  },
+  {
+    "code": "UST",
+    "city": "St Augustine",
+    "state": "FL",
+    "country": "US"
+  },
+  {
+    "code": "UTO",
+    "city": "Utopia Creek",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "VAD",
+    "city": "Valdosta",
+    "state": "GA",
+    "country": "US"
+  },
+  {
+    "code": "VBG",
+    "city": "Lompoc",
+    "state": "CA",
+    "country": "US"
+  },
+  {
+    "code": "VCT",
+    "city": "Victoria",
+    "state": "TX",
+    "country": "US"
+  },
+  {
+    "code": "VDZ",
+    "city": "Valdez",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "VEL",
+    "city": "Vernal",
+    "state": "UT",
+    "country": "US"
+  },
+  {
+    "code": "VGT",
+    "city": "Las Vegas",
+    "state": "NV",
+    "country": "US"
+  },
+  {
+    "code": "VIS",
+    "city": "Visalia",
+    "state": "CA",
+    "country": "US"
+  },
+  {
+    "code": "VLD",
+    "city": "Valdosta",
+    "state": "GA",
+    "country": "US"
+  },
+  {
+    "code": "VNY",
+    "city": "Van Nuys",
+    "state": "CA",
+    "country": "US"
+  },
+  {
+    "code": "VOK",
+    "city": "Camp Douglas",
+    "state": "WI",
+    "country": "US"
+  },
+  {
+    "code": "VPS",
+    "city": "Valparaiso",
+    "state": "FL",
+    "country": "US"
+  },
+  {
+    "code": "VPZ",
+    "city": "Valparaiso",
+    "state": "IN",
+    "country": "US"
+  },
+  {
+    "code": "VQQ",
+    "city": "Jacksonville",
+    "state": "FL",
+    "country": "US"
+  },
+  {
+    "code": "VRB",
+    "city": "Vero Beach",
+    "state": "FL",
+    "country": "US"
+  },
+  {
+    "code": "VTN",
+    "city": "Valentine",
+    "state": "NE",
+    "country": "US"
+  },
+  {
+    "code": "WJF",
+    "city": "Lancaster",
+    "state": "CA",
+    "country": "US"
+  },
+  {
+    "code": "WKK",
+    "city": "Aleknagik",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "WMC",
+    "city": "Winnemucca",
+    "state": "NV",
+    "country": "US"
+  },
+  {
+    "code": "WMH",
+    "city": "Mountain Home",
+    "state": "AR",
+    "country": "US"
+  },
+  {
+    "code": "WRB",
+    "city": "Warner Robins",
+    "state": "GA",
+    "country": "US"
+  },
+  {
+    "code": "WRG",
+    "city": "Wrangell",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "WRI",
+    "city": "Wrightstown",
+    "state": "NJ",
+    "country": "US"
+  },
+  {
+    "code": "WRL",
+    "city": "Worland",
+    "state": "WY",
+    "country": "US"
+  },
+  {
+    "code": "WST",
+    "city": "Westerly",
+    "state": "RI",
+    "country": "US"
+  },
+  {
+    "code": "WWA",
+    "city": "Wasilla",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "WWD",
+    "city": "Wildwood",
+    "state": "NJ",
+    "country": "US"
+  },
+  {
+    "code": "WWR",
+    "city": "Woodward",
+    "state": "OK",
+    "country": "US"
+  },
+  {
+    "code": "WYS",
+    "city": "West Yellowstone",
+    "state": "MT",
+    "country": "US"
+  },
+  {
+    "code": "XNA",
+    "city": "Fayetteville/Springdale/Rogers",
+    "state": "AR",
+    "country": "US"
+  },
+  {
+    "code": "XWA",
+    "city": "Williston",
+    "state": "ND",
+    "country": "US"
+  },
+  {
+    "code": "YAK",
+    "city": "Yakutat",
+    "state": "AK",
+    "country": "US"
+  },
+  {
+    "code": "YIP",
+    "city": "Detroit",
+    "state": "MI",
+    "country": "US"
+  },
+  {
+    "code": "YKM",
+    "city": "Yakima",
+    "state": "WA",
+    "country": "US"
+  },
+  {
+    "code": "YKN",
+    "city": "Yankton",
+    "state": "SD",
+    "country": "US"
+  },
+  {
+    "code": "YNG",
+    "city": "Youngstown/Warren",
+    "state": "OH",
+    "country": "US"
+  },
+  {
+    "code": "YUM",
+    "city": "Yuma",
+    "state": "AZ",
+    "country": "US"
+  },
+  {
+    "code": "ZZV",
+    "city": "Zanesville",
+    "state": "OH",
+    "country": "US"
+  }
+]

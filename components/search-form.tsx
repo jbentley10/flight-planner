@@ -21,9 +21,13 @@ function SearchForm(props: {
   const [outboundDate, setOutboundDate] = useState<string | undefined>(
     getStringDate(new Date().toString())
   );
-  const [returnDate, setReturnDate] = useState<string | undefined>(
-    getStringDate(new Date().toString())
-  );
+  const [returnDate, setReturnDate] = useState<string | undefined>(() => {
+    const outboundDateObj = new Date(outboundDate || new Date());
+    const nextDay = new Date(outboundDateObj);
+    nextDay.setDate(outboundDateObj.getDate() + 1);
+    return getStringDate(nextDay.toString());
+  });
+
   const [departAirport, setDepartAirport] = useState<string | undefined>();
   const [arrivalAirport, setArrivalAirport] = useState<string | undefined>();
   const [passengers, setPassengers] = useState<string>("1");
