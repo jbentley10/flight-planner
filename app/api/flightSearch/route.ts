@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 
 export async function POST(req: NextRequest) {
-  const apiKey = process.env.NEXT_PUBLIC_SERP_API_KEY;
+  const apiKey = process.env.SERP_API_KEY;
 
   const body = await req.json();
 
