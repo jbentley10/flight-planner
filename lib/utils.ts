@@ -28,8 +28,8 @@ export function getDate(timeString: string) {
   // Parse the date string into a Date object
   const dateObject = new Date(timeString);
 
-  const month = dateObject.getMonth() + 1; // Month is 0-based, so add 1
-  const day = dateObject.getDate();
+  const month = (dateObject.getMonth() + 1).toString().padStart(2, "0"); // Month is 0-based, so add 1 and pad with 0
+  const day = dateObject.getDate().toString().padStart(2, "0");
 
   return `${month}/${day}`;
 }
@@ -39,8 +39,8 @@ export function getStringDate(timeString: string) {
   const dateObject = new Date(timeString);
 
   const year = dateObject.getFullYear();
-  const month = dateObject.getMonth() + 1; // Month is 0-based, so add 1
-  const day = dateObject.getDate();
+  const month = (dateObject.getMonth() + 1).toString().padStart(2, "0"); // Month is 0-based, so add 1 and pad with 0
+  const day = dateObject.getDate().toString().padStart(2, "0");
 
   return `${year}-${month}-${day}`;
 }
