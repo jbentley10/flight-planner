@@ -51,7 +51,9 @@ function FlightResultsTable(props: {
 
       <div className='flex space-x-4 mb-6'>
         {[-1, 0, 1].map((offset) => {
-          const selectedDate = new Date(search_parameters.outbound_date);
+          const selectedDate = new Date(
+            search_parameters.outbound_date + "T12:00:00"
+          );
           const currentDate = new Date();
           currentDate.setHours(0, 0, 0, 0);
 
