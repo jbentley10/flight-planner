@@ -1,11 +1,13 @@
 import { FlightResults } from "./types";
 
 export default async function getSearchResults(options: object) {
-  const url = process.env.VERCEL_URL;
+  const apiUrl = process.env.VERCEL_URL
+    ? `https://${process.env.VERCEL_URL}`
+    : process.env.NEXT_PUBLIC_LOCAL_URL;
 
   try {
     // Execute the fetch API
-    const res = await fetch(`${url}/api/flightSearch`, options);
+    const res = await fetch(`${apiUrl}/api/flightSearch`, options);
 
     // Check if the response is OK (status code 200-299)
     if (!res.ok) {
@@ -23,7 +25,7 @@ export default async function getSearchResults(options: object) {
     return final;
   } catch (error) {
     console.log("Error fetching flight data:", error);
-    return undefined;
+    throw error;
   }
 }
 
