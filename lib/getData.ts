@@ -24,7 +24,11 @@ export default async function getSearchResults(options: object) {
 
     return final;
   } catch (error) {
-    console.log("Error fetching flight data:", error);
+    console.error("Error fetching flight data:", error);
+    if (error instanceof Response) {
+      console.error("Response status:", error.status);
+      console.error("Response text:", await error.text());
+    }
     throw error;
   }
 }

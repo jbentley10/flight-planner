@@ -29,6 +29,7 @@ export default async function SearchResults({
     method: "POST",
     headers: {
       "content-type": "application/json",
+      Authorization: `Bearer ${process.env.SERP_API_KEY}`,
     },
     body: JSON.stringify({
       outbound_date: searchParams.outbound_date,
