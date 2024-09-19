@@ -28,8 +28,15 @@ export async function POST(req: NextRequest) {
 
   const url = `https://serpapi.com/search?${params}`;
 
+  const options = {
+    method: "GET",
+    headers: {
+      "content-type": "application/json",
+    },
+  };
+
   try {
-    const response = await fetch(url);
+    const response = await fetch(url, options);
 
     if (!response.ok) {
       throw new Error(
