@@ -2,7 +2,6 @@ import { NextRequest, NextResponse } from "next/server";
 
 export async function POST(req: NextRequest) {
   const apiKey = process.env.SERP_API_KEY;
-  console.log("API Key:", apiKey ? "Present" : "Missing");
 
   const body = await req.json();
 

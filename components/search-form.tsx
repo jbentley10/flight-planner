@@ -122,8 +122,8 @@ function SearchForm(props: {
                 query: {
                   outbound_date: outboundDate,
                   return_date: returnDate,
-                  depart_airport: departAirport,
-                  arrival_airport: arrivalAirport,
+                  departure_id: departAirport,
+                  arrival_id: arrivalAirport,
                   adults: passengers,
                 },
               }}
