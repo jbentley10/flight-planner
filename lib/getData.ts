@@ -1,3 +1,5 @@
+"use server";
+
 import { FlightResults } from "./types";
 
 export default async function getSearchResults(options: object) {
