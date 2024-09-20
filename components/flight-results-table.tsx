@@ -2,18 +2,32 @@
 
 import React from "react";
 import { ArrowDownIcon } from "lucide-react";
-import { Flight, FlightResult, FlightResults } from "@/lib/types";
+import { Flight, FlightResult } from "@/lib/types";
 import { getDate, getTime, toHoursAndMinutes } from "@/lib/utils";
-import { Button } from "./ui/button";
-import Link from "next/link";
+import { useSearchParams } from "next/navigation";
+import useSWR from "swr";
+import FlightResultsSkeleton from "./flight-results-table-skeleton";
 
-function FlightResultsTable(props: {
-  departureID: string;
-  arrivalID: string;
-  results: FlightResults;
-}) {
-  const { departureID, arrivalID } = props;
-  const { best_flights, other_flights, search_parameters } = props.results;
+function FlightResultsTable() {
+  const searchParams = useSearchParams();
+
+  const departure_id: string | null = searchParams.get("departure_id");
+  const arrival_id: string | null = searchParams.get("arrival_id");
+  const outbound_date: string | null = searchParams.get("outbound_date");
+  const return_date: string | null = searchParams.get("return_date");
+  const adults: string | null = searchParams.get("adults");
+
+  const fetcher = (url: string) => fetch(url).then((res) => res.json());
+
+  const { data, error, isLoading } = useSWR(
+    `https://serpapi.com/search?engine=google_flights&api_key=${process.env.SERP_API_KEY}&departure_id=${departure_id}&arrival_id=${arrival_id}&adults=${adults}&outbound_date=${outbound_date}&return_date=${return_date}&currency=USD`,
+    fetcher
+  );
+
+  if (error) return <div>failed to load</div>;
+  if (isLoading) return <FlightResultsSkeleton />;
+
+  const { best_flights, other_flights } = data;
 
   function FlightDataRow(props: { flights: FlightResult[] }) {
     return (
@@ -47,12 +61,12 @@ function FlightResultsTable(props: {
   return (
     <>
       <h1 className='text-3xl font-bold mb-4'>SELECT A DEPARTURE FLIGHT</h1>
-      <h2 className='text-xl mb-6'>{`${departureID} to ${arrivalID}`}</h2>
+      <h2 className='text-xl mb-6'>{`${departure_id} to ${arrival_id}`}</h2>
 
-      <div className='flex space-x-4 mb-6'>
+      {/* <div className='flex space-x-4 mb-6'>
         {[-1, 0, 1].map((offset) => {
           const selectedDate = new Date(
-            search_parameters.outbound_date + "T12:00:00"
+            outbound_date + "T12:00:00"
           );
           const currentDate = new Date();
           currentDate.setHours(0, 0, 0, 0);
@@ -73,8 +87,6 @@ function FlightResultsTable(props: {
             day: "numeric",
           });
           const newOutboundDate = date.toISOString().split("T")[0];
-
-          const { departure_id, arrival_id, return_date } = search_parameters;
 
           const newSearchParams = new URLSearchParams({
             outbound_date: newOutboundDate,
@@ -102,7 +114,7 @@ function FlightResultsTable(props: {
             </Link>
           );
         })}
-      </div>
+      </div> */}
 
       <div className='bg-white rounded-lg shadow overflow-hidden'>
         <table className='w-full'>

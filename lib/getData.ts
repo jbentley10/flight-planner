@@ -4,26 +4,19 @@
  */
 "use server";
 
-import { getJson } from "serpapi";
+import { redirect } from "next/navigation";
 
-export default async function getSearchResults(formData: FormData) {
-  if (formData) {
-    getJson(
-      {
-        engine: "google_flights",
-        departure_id: formData.get("departure_id"),
-        arrival_id: formData.get("arrival_id"),
-        outbound_date: formData.get("outbound_date"),
-        return_date: formData.get("return_date"),
-        currency: "USD",
-        hl: "en",
-        api_key: process.env.SERP_API_KEY,
-      },
-      (json) => {
-        console.log(json);
-      }
-    );
-  }
+export async function passSearchParams(formData: FormData) {
+  // Redirect to a results page with the data
+  redirect(
+    `/search-results?departure_id=${formData.get(
+      "departure_id"
+    )}&arrival_id=${formData.get("arrival_id")}&outbound_date=${formData.get(
+      "outbound_date"
+    )}&return_date=${formData.get("return_date")}&adults=${formData.get(
+      "adults"
+    )}`
+  );
 }
 
 export async function fetchAirports() {
