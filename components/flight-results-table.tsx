@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { Suspense } from "react";
 import { ArrowDownIcon } from "lucide-react";
 import { Flight, FlightResult } from "@/lib/types";
 import { getDate, getTime, toHoursAndMinutes } from "@/lib/utils";
@@ -8,7 +8,7 @@ import { useSearchParams } from "next/navigation";
 import useSWR from "swr";
 import FlightResultsSkeleton from "./flight-results-table-skeleton";
 
-function FlightResultsTable() {
+function FlightResultsContent() {
   const searchParams = useSearchParams();
 
   const departure_id: string | null = searchParams.get("departure_id");
@@ -141,6 +141,14 @@ function FlightResultsTable() {
         </table>
       </div>
     </>
+  );
+}
+
+function FlightResultsTable() {
+  return (
+    <Suspense fallback={<FlightResultsSkeleton />}>
+      <FlightResultsContent />
+    </Suspense>
   );
 }
 
