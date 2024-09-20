@@ -20,7 +20,7 @@ function FlightResultsContent() {
   const fetcher = (url: string) => fetch(url).then((res) => res.json());
 
   const { data, error, isLoading } = useSWR(
-    `https://serpapi.com/search?engine=google_flights&api_key=${process.env.SERP_API_KEY}&departure_id=${departure_id}&arrival_id=${arrival_id}&adults=${adults}&outbound_date=${outbound_date}&return_date=${return_date}&currency=USD`,
+    `/api/flights?departure_id=${departure_id}&arrival_id=${arrival_id}&adults=${adults}&outbound_date=${outbound_date}&return_date=${return_date}`,
     fetcher
   );
 
