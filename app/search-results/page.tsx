@@ -2,7 +2,6 @@ import FlightResultsTable from "@/components/flight-results-table";
 import FlightResultsSkeleton from "@/components/flight-results-table-skeleton";
 import ProgressIndicator from "@/components/progress-indicator";
 import { Button } from "@/components/ui/button";
-import getSearchResults from "@/lib/getData";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -23,25 +22,6 @@ export default async function SearchResults({
 }) {
   const departure_id: string | null = searchParams.departure_id;
   const arrival_id: string | null = searchParams.arrival_id;
-
-  // fetch options
-  const options = {
-    method: "POST",
-    headers: {
-      "content-type": "application/json",
-      Authorization: `Bearer ${process.env.SERP_API_KEY}`,
-    },
-    body: JSON.stringify({
-      outbound_date: searchParams.outbound_date,
-      return_date: searchParams.return_date,
-      adults: searchParams.adults,
-      departure_id: searchParams.departure_id,
-      arrival_id: searchParams.arrival_id,
-      currency: "USD",
-    }),
-  };
-
-  const results = await getSearchResults(options);
 
   return (
     <div className='min-h-screen bg-gray-100'>

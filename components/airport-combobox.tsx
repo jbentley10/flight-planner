@@ -26,8 +26,9 @@ export function AirportCombobox(props: {
     state: string | null;
     country: string | null;
   }[];
+  name: string;
 }) {
-  const { airports } = props;
+  const { airports, name } = props;
   const [open, setOpen] = React.useState(false);
   const [value, setValue] = React.useState("");
 
@@ -37,49 +38,53 @@ export function AirportCombobox(props: {
   }, [airports]);
 
   return (
-    <Popover open={open} onOpenChange={setOpen}>
-      <PopoverTrigger asChild>
-        <Button
-          variant='outline'
-          role='combobox'
-          aria-expanded={open}
-          className='w-[150px] justify-between'
-        >
-          {value
-            ? sortedAirports.find((airport) => airport.city === value)?.city ||
-              value
-            : "Select airport..."}
-          <ChevronsUpDown className='ml-2 h-4 w-4 shrink-0 opacity-50' />
-        </Button>
-      </PopoverTrigger>
-      <PopoverContent className='w-[200px] p-0'>
-        <Command>
-          <CommandInput placeholder='Search airport...' />
-          <CommandList>
-            <CommandEmpty>No airport found.</CommandEmpty>
-            <CommandGroup>
-              {sortedAirports.map((airport) => (
-                <CommandItem
-                  key={airport.code}
-                  value={airport.code}
-                  onSelect={(currentValue) => {
-                    setValue(currentValue === value ? "" : currentValue);
-                    setOpen(false);
-                    props.handleChange(currentValue);
-                  }}
-                >
-                  <Check
-                    className={`mr-2 h-4 w-4 ${
-                      value === airport.code ? "opacity-100" : "opacity-0"
-                    }`}
-                  />
-                  {airport.city}, {airport.state} ({airport.code})
-                </CommandItem>
-              ))}
-            </CommandGroup>
-          </CommandList>
-        </Command>
-      </PopoverContent>
-    </Popover>
+    <>
+      <Popover open={open} onOpenChange={setOpen}>
+        <PopoverTrigger asChild>
+          <Button
+            variant='outline'
+            role='combobox'
+            aria-expanded={open}
+            className='w-[150px] justify-between'
+            name={name}
+          >
+            {value
+              ? sortedAirports.find((airport) => airport.city === value)
+                  ?.city || value
+              : "Select airport..."}
+            <ChevronsUpDown className='ml-2 h-4 w-4 shrink-0 opacity-50' />
+          </Button>
+        </PopoverTrigger>
+        <PopoverContent className='w-[200px] p-0'>
+          <Command>
+            <CommandInput placeholder='Search airport...' />
+            <CommandList>
+              <CommandEmpty>No airport found.</CommandEmpty>
+              <CommandGroup>
+                {sortedAirports.map((airport) => (
+                  <CommandItem
+                    key={airport.code}
+                    value={airport.code}
+                    onSelect={(currentValue) => {
+                      setValue(currentValue === value ? "" : currentValue);
+                      setOpen(false);
+                      props.handleChange(currentValue);
+                    }}
+                  >
+                    <Check
+                      className={`mr-2 h-4 w-4 ${
+                        value === airport.code ? "opacity-100" : "opacity-0"
+                      }`}
+                    />
+                    {airport.city}, {airport.state} ({airport.code})
+                  </CommandItem>
+                ))}
+              </CommandGroup>
+            </CommandList>
+          </Command>
+        </PopoverContent>
+      </Popover>
+      <input type='hidden' name={name} value={value} />
+    </>
   );
 }

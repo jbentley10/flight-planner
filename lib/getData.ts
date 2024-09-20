@@ -1,42 +1,28 @@
+/**
+ * @file getData.ts
+ * @description Declares functions which handle data submission and fetching.
+ */
 "use server";
 
-export default async function getSearchResults(options: object) {
-  const apiUrl = process.env.VERCEL_URL
-    ? `https://${process.env.VERCEL_URL}`
-    : process.env.NEXT_PUBLIC_LOCAL_URL;
+import { getJson } from "serpapi";
 
-  console.log("API URL:", apiUrl); // Log the API URL
-
-  try {
-    console.log("Sending request to:", `${apiUrl}/api/flightSearch`);
-    console.log("Request options:", JSON.stringify(options));
-
-    const res = await fetch(`${apiUrl}/api/flightSearch`, options);
-
-    console.log("Response status:", res.status);
-    console.log(
-      "Response headers:",
-      JSON.stringify(Object.fromEntries(res.headers))
+export default async function getSearchResults(formData: FormData) {
+  if (formData) {
+    getJson(
+      {
+        engine: "google_flights",
+        departure_id: formData.get("departure_id"),
+        arrival_id: formData.get("arrival_id"),
+        outbound_date: formData.get("outbound_date"),
+        return_date: formData.get("return_date"),
+        currency: "USD",
+        hl: "en",
+        api_key: process.env.SERP_API_KEY,
+      },
+      (json) => {
+        console.log(json);
+      }
     );
-
-    if (!res.ok) {
-      const errorText = await res.text();
-      console.error("Error response body:", errorText);
-      throw new Error(
-        `HTTP error! Status: ${res.status}, Message: ${errorText}`
-      );
-    }
-
-    const data = await res.json();
-    console.log(
-      "Response data:",
-      JSON.stringify(data).substring(0, 200) + "..."
-    ); // Log first 200 chars of response
-
-    return data;
-  } catch (error) {
-    console.error("Error fetching flight data:", error);
-    throw error;
   }
 }
 
