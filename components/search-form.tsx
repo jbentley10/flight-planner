@@ -9,7 +9,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 
 import { getStringDate } from "@/lib/utils";
-import getSearchResults from "@/lib/getData";
+import { passSearchParams } from "@/lib/getData";
 
 function SearchForm(props: {
   airports: {
@@ -42,7 +42,7 @@ function SearchForm(props: {
       </h2>
 
       {/* BEGIN FORM */}
-      <form action={getSearchResults}>
+      <form action={passSearchParams}>
         <RadioGroup defaultValue='round' className='flex space-x-4 mb-4'>
           <div className='flex items-center space-x-2'>
             <RadioGroupItem value='round' id='round' />
