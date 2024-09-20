@@ -2,6 +2,8 @@ import { NextRequest, NextResponse } from "next/server";
 
 export async function POST(req: NextRequest) {
   const apiKey = process.env.SERP_API_KEY;
+  console.log("API Key exists:", !!apiKey);
+  console.log("API Key length:", apiKey?.length);
 
   // Log the API key (first few characters for security)
   console.log("API Key (first 4 chars):", apiKey?.substring(0, 4));
