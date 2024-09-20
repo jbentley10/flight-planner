@@ -4,6 +4,7 @@ export async function POST(req: NextRequest) {
   const apiKey = process.env.SERP_API_KEY;
   console.log("API Key exists:", !!apiKey);
   console.log("API Key length:", apiKey?.length);
+  console.log("API Key (first 4 chars):", apiKey?.substring(0, 4));
 
   // Log the API key (first few characters for security)
   console.log("API Key (first 4 chars):", apiKey?.substring(0, 4));
@@ -43,24 +44,34 @@ export async function POST(req: NextRequest) {
     },
   };
 
+  console.log(
+    "Full URL (API key hidden):",
+    url.replace(apiKey || "", "API_KEY_HIDDEN")
+  );
+
   try {
     const response = await fetch(url, options);
 
-    console.log("Response status:", response.status);
+    console.log("SerpAPI Response status:", response.status);
     console.log(
-      "Response headers:",
+      "SerpAPI Response headers:",
       JSON.stringify(Object.fromEntries(response.headers))
     );
 
     if (!response.ok) {
       const errorText = await response.text();
-      console.error("Error response body:", errorText);
+      console.error("SerpAPI Error response body:", errorText);
       throw new Error(
         `HTTP error! Status: ${response.status}, Message: ${errorText}`
       );
     }
 
     const result = await response.json();
+    console.log(
+      "SerpAPI Response data:",
+      JSON.stringify(result).substring(0, 200) + "..."
+    ); // Log first 200 chars of response
+
     return NextResponse.json(result);
   } catch (error) {
     console.error("Error in flight search:", error);

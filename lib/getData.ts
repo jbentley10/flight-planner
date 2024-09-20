@@ -1,36 +1,41 @@
 "use server";
 
-import { FlightResults } from "./types";
-
 export default async function getSearchResults(options: object) {
   const apiUrl = process.env.VERCEL_URL
     ? `https://${process.env.VERCEL_URL}`
     : process.env.NEXT_PUBLIC_LOCAL_URL;
 
+  console.log("API URL:", apiUrl); // Log the API URL
+
   try {
-    // Execute the fetch API
+    console.log("Sending request to:", `${apiUrl}/api/flightSearch`);
+    console.log("Request options:", JSON.stringify(options));
+
     const res = await fetch(`${apiUrl}/api/flightSearch`, options);
 
-    // Check if the response is OK (status code 200-299)
+    console.log("Response status:", res.status);
+    console.log(
+      "Response headers:",
+      JSON.stringify(Object.fromEntries(res.headers))
+    );
+
     if (!res.ok) {
-      throw new Error(`HTTP error! Status: ${res.status}`);
+      const errorText = await res.text();
+      console.error("Error response body:", errorText);
+      throw new Error(
+        `HTTP error! Status: ${res.status}, Message: ${errorText}`
+      );
     }
 
-    // Check if the response has content
-    if (res.headers.get("content-length") === "0") {
-      throw new Error("No content returned from the server.");
-    }
+    const data = await res.json();
+    console.log(
+      "Response data:",
+      JSON.stringify(data).substring(0, 200) + "..."
+    ); // Log first 200 chars of response
 
-    // Get data back from the backend
-    const final: FlightResults = await res.json();
-
-    return final;
+    return data;
   } catch (error) {
     console.error("Error fetching flight data:", error);
-    if (error instanceof Response) {
-      console.error("Response status:", error.status);
-      console.error("Response text:", await error.text());
-    }
     throw error;
   }
 }
