@@ -7,6 +7,8 @@ import { getDate, getTime, toHoursAndMinutes } from "@/lib/utils";
 import { useSearchParams } from "next/navigation";
 import useSWR from "swr";
 import FlightResultsSkeleton from "./flight-results-table-skeleton";
+import { Button } from "./ui/button";
+import { passSearchParams } from "@/lib/getData";
 
 function FlightResultsContent() {
   const searchParams = useSearchParams();
@@ -63,11 +65,9 @@ function FlightResultsContent() {
       <h1 className='text-3xl font-bold mb-4'>SELECT A DEPARTURE FLIGHT</h1>
       <h2 className='text-xl mb-6'>{`${departure_id} to ${arrival_id}`}</h2>
 
-      {/* <div className='flex space-x-4 mb-6'>
-        {[-1, 0, 1].map((offset) => {
-          const selectedDate = new Date(
-            outbound_date + "T12:00:00"
-          );
+      <div className='flex space-x-4 mb-6'>
+        {[-1, 0, 1].map((offset, index) => {
+          const selectedDate = new Date(outbound_date + "T12:00:00");
           const currentDate = new Date();
           currentDate.setHours(0, 0, 0, 0);
 
@@ -88,33 +88,33 @@ function FlightResultsContent() {
           });
           const newOutboundDate = date.toISOString().split("T")[0];
 
-          const newSearchParams = new URLSearchParams({
-            outbound_date: newOutboundDate,
-            return_date: return_date,
-            departure_id: departure_id,
-            arrival_id: arrival_id,
-            adults: search_parameters.adults.toString(),
-          });
-
-          return (
-            <Link
-              key={offset}
-              href={`/search-results?${newSearchParams.toString()}`}
-              passHref
-            >
+          if (return_date && departure_id && arrival_id && adults) {
+            return (
               <Button
+                key={index}
                 variant={offset === 0 ? "secondary" : "outline"}
                 className='flex flex-col items-center px-8 py-6'
+                onClick={() => {
+                  const formData = new FormData();
+                  formData.append("outbound_date", newOutboundDate);
+                  formData.append("return_date", return_date);
+                  formData.append("departure_id", departure_id);
+                  formData.append("arrival_id", arrival_id);
+                  formData.append("adults", adults);
+                  passSearchParams(formData);
+                }}
               >
                 <span className='text-sm font-bold'>
                   {dayOfWeek.toUpperCase()}
                 </span>
                 <span className='text-xs'>{formattedDate}</span>
               </Button>
-            </Link>
-          );
+            );
+          }
+
+          return;
         })}
-      </div> */}
+      </div>
 
       <div className='bg-white rounded-lg shadow overflow-hidden'>
         <table className='w-full'>
